@@ -1,0 +1,33 @@
+p {
+    position: relative;
+    margin: 1px;
+}
+
+body {
+    padding: 30px;
+    background-image: url("dptphoto1.png");
+    background-size: cover;
+}
+
+.entête {
+    top: 1px;
+}
+
+.categorie {
+    margin: 10px;
+    width: 25%;
+    height: 250px;
+    border: solid #DD4747 0.7;
+    background-color: #DD4747;
+    float: left;
+    text-align: center;
+}
+
+.Contact {
+    position: fixed;
+    bottom: 0px;
+    width: 75%;
+    height: 10%;
+    border: solid #DD4747;
+    float: center;
+}
