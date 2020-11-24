@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="stylesheet" href="Profil utilisateur Mes informations.css">
+    <meta charset="UTF-8">
+    <title>Profil utilisateur Mes informations</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Bonjour, <br/> Juliette Sebillotte</li>
+            <li><a href="Profil%20utilisateur%20Apercu%20du%20compte.html"><img class="image" src="user-regular.svg" alt="">Aperçu du compte</a></li>
+            <li><p class="mes"><a href="Profil%20utilisateur%20Mes%20informations.html"><img class="image" src="address-card-regular.svg" alt=""> Mes informations</a><p/></li>
+            <li><p class="mes"><a href="Profil%20utilisateur%20Mes%20resultats.html"><img class="image" src="chart-bar-regular.svg" alt="">Mes résultats </a><p/></li>
+            <li><a href="Commencer un test.html"><img class="image" src="play-solid.svg" alt="">Commencer un test</a></li>
+            <li><a href="Deconnexion.html"><img class="image" src="sign-out-alt-solid.svg" alt="">Déconnexion</a></li>
+
+
+        </ul>
+    </nav>
+    <div>
+        <h1><img class="titreicon" src="address-card-regular.svg" alt=""></h1>
+        <h2>MES INFORMATIONS</h2>
+        <p> N'hésitez pas à modifier vos coordonnés pour que votre compte soit parfaitement à jour.</p>
+
+
+    </div>
+
+    <form class="form_information" action="traitement.php" method="post">
+
+            <p>
+
+                <label for="genre">Genre :</label><br/>
+                <select name="genre" id="genre" class="genre">
+                    <option value="Femme">Femme</option>
+                    <option value="Homme">Homme</option>
+                    <option value="Autre">Autre </option>
+                </select>
+
+                <br/> <!--Permet de sauter des lignes entre les cases-->
+                <br/>
+                <label for="name">Nom de famille :</label><br/>
+                <input type="text" id="name" name="user_name"
+                       class="remplissage" />
+
+
+                <br/>
+                <br/>
+                <label for="prenom">Prénom :</label><br/>
+                <input type="text" id="prenom" name="user_prenom"
+                       class="remplissage"/>
+
+                <br/>
+                <br/>
+                <label for="mail">Adresse mail :</label><br/>
+                <input type="email" id="mail" name="user_mail"
+                       class="remplissage"/>
+
+                <br/>
+                <br/>
+                <label for="pass">Mot de passe actuel :</label><br/>
+                <input type="password" name="pass" id="pass"
+                       class="remplissage"/>
+                <br/>
+                <br/>
+                <label for="newpass">&emsp;&emsp;&emsp;Nouveau mot de passe :</label><br/> <!--Permet de mettre des espaces pour aligner avec la zone de texte-->
+                <input type="password" name="newpass" id="newpass"
+                       class="newpass"/>
+
+                <br/>
+                <br/>
+                <label for="tel">Numéro de téléphone :</label><br/>
+                <input type="tel" name="tel" id="tel"
+                       class="remplissage"/>
+
+                <br/>
+                <br/>
+                <label for="date">Date de naissance :</label><br/>
+                <input type="date" name="date" id="date"
+                       class="remplissage"/>
+
+                <br/>
+                <br/>
+                <label for="permis">Numéro de permis :</label><br/>
+                <input type="tel" name="permis" id="permis"
+                       class="remplissage"/>
+
+                <br/>
+                <br/>
+                <label for="photo">Ajouter une photo :</label><br/>
+                <input type="file" name="photo" id="photo"/>
+
+                <br/>
+                <br/>
+                <input type="submit" value="Sauvegarder"
+                       class="remplissage"/>
+
+            </p>
+    </form>
+</body>
+</html>
