@@ -1,107 +1,185 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-<head>
-    <link rel="stylesheet" href="Mes informations.css">
-    <meta charset="UTF-8">
-    <title>Profil utilisateur Mes informations</title>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li>Bonjour, <br/> Juliette Sebillotte</li>
-            <li><a href="Profil%20utilisateur%20Apercu%20du%20compte.html"><img class="image" src="user-regular.svg" alt="">Aperçu du compte</a></li>
-            <li><p class="mes"><a href="Profil%20utilisateur%20Mes%20informations.html"><img class="image" src="address-card-regular.svg" alt=""> Mes informations</a><p/></li>
-            <li><p class="mes"><a href="Profil%20utilisateur%20Mes%20resultats.html"><img class="image" src="chart-bar-regular.svg" alt="">Mes résultats </a><p/></li>
-            <li><a href="Commencer un test.html"><img class="image" src="play-solid.svg" alt="">Commencer un test</a></li>
-            <li><a href="Deconnexion.html"><img class="image" src="sign-out-alt-solid.svg" alt="">Déconnexion</a></li>
+/*BARRE DE NAVIGUATION GENERAL*/
+
+ul{
+    text-decoration: none;
+}
+body{
+    font-family: "Roboto Light", sans-serif;
+}
 
 
-        </ul>
-    </nav>
-    <div>
-        <h1><img class="titreicon" src="address-card-regular.svg" alt=""></h1>
-        <h2>MES INFORMATIONS</h2>
-        <p> N'hésitez pas à modifier vos coordonnés pour que votre compte soit parfaitement à jour.</p>
+.image { /*Reglage de toutes les icons*/
+    width: 25px;
+    display: flow;
+    float: left;
+    margin-right: 20px;
+    margin-top: -5px;
+}
 
 
-    </div>
+ul li:nth-child(1) /*Bonjour*/
+{
+    background-color: lightgray;
+    padding: 20px;
+    width: 300px;
+    text-decoration: none;
+    display: block;
+    margin: 30px 0;
+}
 
-    <form class="form_information" action="traitement.php" method="post">
-
-            <p>
-
-                <label for="genre">Genre :</label><br/>
-                <select name="genre" id="genre" class="genre">
-                    <option value="Femme">Femme</option>
-                    <option value="Homme">Homme</option>
-                    <option value="Autre">Autre </option>
-                </select>
-
-                <br/> <!--Permet de sauter des lignes entre les cases-->
-                <br/>
-                <label for="name">Nom de famille :</label><br/>
-                <input type="text" id="name" name="user_name"
-                       class="remplissage" />
+ul li:nth-child(1):hover /*Bonjour*/
+{
+    background-color: #dd4747;
+}
 
 
-                <br/>
-                <br/>
-                <label for="prenom">Prénom :</label><br/>
-                <input type="text" id="prenom" name="user_prenom"
-                       class="remplissage"/>
+ul li:nth-child(2) /*Aperçu du compte */
+{
+    background-color: lightgray;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    width: 300px;
+    margin: 0 0 10px;
+}
 
-                <br/>
-                <br/>
-                <label for="mail">Adresse mail :</label><br/>
-                <input type="email" id="mail" name="user_mail"
-                       class="remplissage"/>
+ul li:nth-child(2):hover /*Aperçu du compte */
+{
+    background-color: #dd4747;
+}
 
-                <br/>
-                <br/>
-                <label for="pass">Mot de passe actuel :</label><br/>
-                <input type="password" name="pass" id="pass"
-                       class="remplissage"/>
-                <br/>
-                <br/>
-                <label for="newpass">&emsp;&emsp;&emsp;Nouveau mot de passe :</label><br/> <!--Permet de mettre des espaces pour aligner avec la zone de texte-->
-                <input type="password" name="newpass" id="newpass"
-                       class="newpass"/>
 
-                <br/>
-                <br/>
-                <label for="tel">Numéro de téléphone :</label><br/>
-                <input type="tel" name="tel" id="tel"
-                       class="remplissage"/>
+ul li:nth-child(3) /*Mes informations*/
+{
+    background-color: lightgray;
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    width: 300px;
+}
 
-                <br/>
-                <br/>
-                <label for="date">Date de naissance :</label><br/>
-                <input type="date" name="date" id="date"
-                       class="remplissage"/>
+ul li:nth-child(3):hover /*Mes informations*/
+{
+    background-color: #dd4747;
+}
 
-                <br/>
-                <br/>
-                <label for="permis">Numéro de permis :</label><br/>
-                <input type="tel" name="permis" id="permis"
-                       class="remplissage"/>
-                
-                <br/>
-                <br/>
-                <label for="autoecole">Nom de l'auto-école :</label><br/>
-                <input type="text" name="autoecole" id="autoecole"
-                       class="remplissage"/>
 
-                <br/>
-                <br/>
-                <label for="photo">Ajouter une photo :</label><br/>
-                <input type="file" name="photo" id="photo"/>
+ul li:nth-child(4) /*Mes résultats*/
+{
+    background-color: lightgray;
+    list-style-type: none;
+    padding: 20px;
+    width: 300px;
+    margin: 0 0 10px;
+}
 
-                <br/>
-                <br/>
-                <input type="submit" value="Sauvegarder"
-                       class="remplissage"/>
+ul li:nth-child(4):hover /*Mes résultats*/
+{
+    background-color: #dd4747;
+}
 
-            </p>
-    </form>
-</body>
-</html>
+
+ul li:nth-child(5) /*Test*/
+{
+    background-color: lightgray;
+    display: block;
+    margin: 0 0 30px;
+    padding: 20px;
+    width: 300px;
+}
+
+ul li:nth-child(5):hover /*Test*/
+{
+    background-color: #dd4747;
+}
+
+
+ul li:nth-child(6) /*Deconnexion*/
+{
+    background-color: lightgray;
+    display: block;
+    padding: 20px;
+    margin: 0;
+    width: 300px;
+
+}
+ul li:nth-child(6):hover /*Deconnexion*/
+{
+    background-color: #dd4747;
+}
+
+
+
+
+/* MES INFORMATIONS */
+
+.titreicon{  /*Placement de l'icon Mes informations*/
+    width: 35px;
+    display: flow;
+    float: left;
+    margin-right: 20px;
+}
+
+
+div{  /*Réglage général du block */
+    display: block;
+    margin-right: 10px;
+    position: absolute;
+    top: 30px;
+    left: 410px;
+    height: 850px;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+
+.form_information{  /*Reglage du form globale*/
+    position: absolute;
+    top: 145px;
+    left: 450px;
+    font-weight: bold;
+}
+
+
+.remplissage{   /*Reglage des zones à remplir*/
+    border: 0;
+    border-radius: 2px;
+    padding: 5px;
+    width: 240px;
+}
+
+.remplissage:hover {  /*Changement de couleur lorsque la souris passe dans une des zones à remplir*/
+    background-color: #dd4747;
+}
+
+
+.genre{   /*Reglage pour la case genre car ne s'aligne pas bien avec les autres sinon*/
+    border: 0;
+    border-radius: 2px;
+    padding: 5px;
+    width: 250px;
+    font-weight: inherit;
+}
+
+
+.newpass{ /*Reglage pour le changement de mot de passe*/
+    border: 0;
+    border-radius: 2px;
+    padding: 5px;
+    width: 240px;
+    margin-left: 47px;
+}
+
+.newpass:hover{  /*Changement de couleur lorsque la souris passe dans une des zones à remplir*/
+    background-color: #dd4747;
+}
+
+
+.form_information input[type=submit]{  /*Reglage pour le bouton sauvegarder*/
+    border: 0;
+    border-radius: 2px;
+    font-weight: bold;
+    padding: 5px;
+    width: 100px;
+    margin-left: 70px;
+}
