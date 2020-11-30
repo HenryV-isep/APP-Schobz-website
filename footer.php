@@ -1,4 +1,5 @@
-div class="footer">
+<link rel="stylesheet" href="footer_index_topbar_style.css">
+<div class="footer">
 
     <span class="menudubaspartiegauche">
         <a href="https://twitter.com"> <img id="twitter" src="images/twitter.png"></a>
@@ -6,6 +7,33 @@ div class="footer">
         <a href="https://www.facebook.com"><img id="facebook" src="images/facebook.png"></a>
         <a href="https://www.linkedin.com"><img id="linkedin" src="images/linkedin.png"></a>
     </span>
+
+    
+    <form class="menudubaspartiecentre">
+        <span class="wrap-input100">
+        Nous contacter
+        </span>
+        <div class="wrap-input100" data-validate="Merci de renseigner votre nom et prénom">
+            <input class="input100" type="text" name="name" placeholder="Nom et Prénom">
+            <span class="focus-input100"></span>
+        <span></span></div>
+            <div class="wrap-input100" data-validate="Merci de renseigner votre adresse mail valide: e@a.x">
+            <input class="input100" type="text" name="email" placeholder="E-mail" >
+            <span class="focus-input100"></span>
+        <span></span></div>
+        <div class="<wrap-input100>" data-validate="Merci de renseigner votre message.">
+            <textarea class="input100" name="message" placeholder="Votre message"></textarea>
+        <span class="focus-input100"></span>
+        </div>
+        <div class="wrap-input100">
+            <button>
+                <span>
+                    <i aria-hidden="true"></i>
+                        Envoyer
+                </span>
+            </button>
+        </div>
+    </form>
 
     <div class="adresse_premierepartie">
         <a href="">10 rue de vanves, 92130</a>
