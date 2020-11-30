@@ -25,6 +25,8 @@
         <body>
             <?php include 'body/topbar.php'; ?>
             <?php include 'body/footer.php'; ?>
+            <?php include 'body/contenu.php'; ?>
+            <?php include 'body/fond.php'; ?>
 
             <div class="container">
                 <div class="search-box">
