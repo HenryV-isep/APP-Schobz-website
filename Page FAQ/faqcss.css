@@ -9,42 +9,45 @@
     color: #fff;
     text-decoration: none;
     background-color: #333;
-    border-radius: 30px;
+    border-radius: 15px;
     cursor: pointer;
     top: 1px;
 }
 .Talk{
     padding: 2px;
+    color: black;
 }
 body{
-    background-color: black;
-    background-size:cover;
+    background-color: #333;
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: "Roboto";
 }
+
 
 
 /* Questions Techniques */
 
 .categorie-QT {
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 5%;
     width: 25%;
     height: auto;
     border: solid #000000 1;
     border-radius: 10px;
-    background-color: #333;
+    background-color: #E4D8C7;
     color: white;
     text-align: center;
     display: inline-block;
-    transition: 0.2s ease-in;
+    transition: 0.1s ease-in;
 }
 .categorie-QT:hover{
     border: solid #000000 3px;
-    background-color: #DD4747;
+    background-color: #dd3333;
     text-align: center;
     display: inline-block;
-    border-radius: 30px;
+    border-radius: 15px;
     color: black;
 }
 
@@ -52,26 +55,26 @@ body{
 
 .categorie-InfoCap {
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 38%;
     width: 25%;
     height: auto;
     border: solid #000000 1;
     border-radius: 10px;
-    background-color: #333;
+    background-color: #E4D8C7;
     color: white;
     text-align: center;
     display: inline-block;
-    transition: 0.2s ease-in;
+    transition: 0.1s ease-in;
 }
 
 
 .categorie-InfoCap:hover {
     border: solid #000000 3px;
-    background-color: #DD4747;
+    background-color: #dd3333;
     text-align: center;
     display: inline-block;
-    border-radius: 30px;
+    border-radius: 15px;
     color: black;
 }
 
@@ -79,17 +82,17 @@ body{
 
 .categorie-ProbCap {
     right: 5%;
-    top: 5%;
+    top: 10%;
     position: absolute;
     width: 25%;
     height: auto;
     border: solid #000000 1;
     border-radius: 10px;
-    background-color: #333;
+    background-color: #E4D8C7;
     color: white;
     text-align: center;
     display: inline-block;
-    transition: 0.2s ease-in;
+    transition: 0.1s ease-in;
 }
 h2.Titre {
     margin-top: 2px;
@@ -97,10 +100,10 @@ h2.Titre {
 
 .categorie-ProbCap:hover {
     border: solid #000000 3px;
-    background-color: #DD4747;
+    background-color: #dd3333;
     text-align: center;
     display: inline-block;
-    border-radius: 30px;
+    border-radius: 15px;
     color: black;
 }
 
@@ -114,19 +117,19 @@ h2.Titre {
     height: auto;
     border: solid #000000 1;
     border-radius: 10px;
-    background-color: #333;
+    background-color: #E4D8C7;
     color: white;
     text-align: center;
     display: inline-block;
-    transition: 0.2s ease-in;
+    transition: 0.1s ease-in;
 }
 
 .categorie-QF:hover {
     border: solid #000000 3px;
-    background-color: #DD4747;
+    background-color: #dd3333;
     text-align: center;
     display: inline-block;
-    border-radius: 30px;
+    border-radius: 15px;
     color: black;
 }
 
@@ -140,18 +143,18 @@ h2.Titre {
     height: auto;
     border: solid #000000 1;
     border-radius: 10px;
-    background-color: #333;
+    background-color: #E4D8C7;
     color: white;
     text-align: center;
     display: inline-block;
-    transition: 0.2s ease-in;
+    transition: 0.1s ease-in;
 }
 .categorie-AddF:hover {
     border: solid #000000 3px;
-    background-color: #DD4747;
+    background-color: #dd3333;
     text-align: center;
     display: inline-block;
-    border-radius: 30px;
+    border-radius: 15px;
     color: black;
 
 }
@@ -179,7 +182,7 @@ h2.Titre {
     margin: 70px auto;
     padding: 20px;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 30%;
     position: relative;
     transition: all 5s ease-in-out;
@@ -188,9 +191,9 @@ h2.Titre {
 .popup .close {
     position: absolute;
     top: 20px;
-    right: 30px;
+    right: 15px;
     transition: all 200ms;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: bold;
     text-decoration: none;
     color: #333;
