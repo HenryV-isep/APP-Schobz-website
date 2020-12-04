@@ -192,6 +192,10 @@ input[type="text"]
     bottom: 11%;
     right: 25%;
 }
+.menudubaspartiecentre {
+    margin-left: 40%;
+    margin-top: 1%;
+}
 
 .wrap-input100 {
     font-family: "Roboto";
