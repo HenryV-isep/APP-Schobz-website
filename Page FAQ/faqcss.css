@@ -13,7 +13,7 @@ body{
 }
 
 .topbar{
-    background-color : #F78181;
+    background-color : #E4D8C7;
     height: 7vw;
     width: 100%; /*Pour que la barre prenne bien 100% de la largeur de la page*/
     line-height: 1.1vw;
@@ -88,7 +88,7 @@ body{
     height: auto;
     border: solid #000000 1;
     border-radius: 10px;
-    background-color: #E4D8C7;
+    background-color: #F78181;
     color: white;
     text-align: center;
     display: inline-block;
@@ -96,7 +96,7 @@ body{
 }
 .categorie-QT:hover{
     border: solid #000000 3px;
-    background-color: #dd3333;
+    background-color: #E4D8C7;
     text-align: center;
     display: inline-block;
     border-radius: 15px;
@@ -113,7 +113,7 @@ body{
     height: auto;
     border: solid #000000 1;
     border-radius: 10px;
-    background-color: #E4D8C7;
+    background-color: #F78181;
     color: white;
     text-align: center;
     display: inline-block;
@@ -123,7 +123,7 @@ body{
 
 .categorie-InfoCap:hover {
     border: solid #000000 3px;
-    background-color: #dd3333;
+    background-color:#E4D8C7;
     text-align: center;
     display: inline-block;
     border-radius: 15px;
@@ -140,7 +140,7 @@ body{
     height: auto;
     border: solid #000000 1;
     border-radius: 10px;
-    background-color: #E4D8C7;
+    background-color: #F78181;
     color: white;
     text-align: center;
     display: inline-block;
@@ -152,7 +152,7 @@ h2.Titre {
 
 .categorie-ProbCap:hover {
     border: solid #000000 3px;
-    background-color: #dd3333;
+    background-color:#E4D8C7;
     text-align: center;
     display: inline-block;
     border-radius: 15px;
@@ -169,7 +169,7 @@ h2.Titre {
     height: auto;
     border: solid #000000 1;
     border-radius: 10px;
-    background-color: #E4D8C7;
+    background-color: #F78181;
     color: white;
     text-align: center;
     display: inline-block;
@@ -178,7 +178,7 @@ h2.Titre {
 
 .categorie-QF:hover {
     border: solid #000000 3px;
-    background-color: #dd3333;
+    background-color:#E4D8C7;
     text-align: center;
     display: inline-block;
     border-radius: 15px;
@@ -195,7 +195,7 @@ h2.Titre {
     height: auto;
     border: solid #000000 1;
     border-radius: 10px;
-    background-color: #E4D8C7;
+    background-color: #F78181;
     color: white;
     text-align: center;
     display: inline-block;
@@ -203,7 +203,7 @@ h2.Titre {
 }
 .categorie-AddF:hover {
     border: solid #000000 3px;
-    background-color: #dd3333;
+    background-color: #E4D8C7;
     text-align: center;
     display: inline-block;
     border-radius: 15px;
@@ -308,7 +308,7 @@ input[type="text"]
 }
 
 .footer{
-    background-color : #F78181;
+    background-color : #E4D8C7;
     position: absolute;
     bottom: 0;
     width: 100%;
