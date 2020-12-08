@@ -10,23 +10,23 @@
 
     
     <form class="menudubaspartiecentre">
-        <span class="wrap-input100">
+        <span class="Nous_contacter_titre">
         Nous contacter
         </span>
-        <div class="wrap-input100" data-validate="Merci de renseigner votre nom et prénom">
-            <input class="input100" type="text" name="name" placeholder="Nom et Prénom">
-            <span class="focus-input100"></span>
+        <div class="Nous_contacter_collect" data-validate="Merci de renseigner votre nom et prénom">
+            <input class="Nous_contacter_imput" type="text" name="name" placeholder="Nom et Prénom">
+            <span class="focus-Nous_contacter"></span>
         <span></span></div>
-            <div class="wrap-input100" data-validate="Merci de renseigner votre adresse mail valide: e@a.x">
-            <input class="input100" type="text" name="email" placeholder="E-mail" >
-            <span class="focus-input100"></span>
+        <div class="Nous_contacter_collect" data-validate="Merci de renseigner votre adresse mail valide: e@a.x">
+            <input class="Nous_contacter_imput" type="text" name="email" placeholder="E-mail" >
+            <span class="focus-Nous_contacter"></span>
         <span></span></div>
-        <div class="<wrap-input100>" data-validate="Merci de renseigner votre message.">
-            <textarea class="input100" name="message" placeholder="Votre message"></textarea>
-        <span class="focus-input100"></span>
+        <div class="<Nous_contacter_collect>" data-validate="Merci de renseigner votre message.">
+            <textarea class="Nous_contacter_imput_textarea" name="message" placeholder="Votre message"></textarea>
+        <span class="focus-Nous_contacter"></span>
         </div>
-        <div class="wrap-input100">
-            <button>
+        <div class="Bloc_Nous_contacter_bouton">
+            <button class="Nous_contacter_bouton">
                 <span>
                     <i aria-hidden="true"></i>
                         Envoyer
