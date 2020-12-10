@@ -345,3 +345,40 @@ input:checked + .slider:before {
 .Nous_contacter_imput_textarea:hover::placeholder {
    color: black;
 }
+
+@media (max-aspect-ratio: 3/2) {
+   .topbar{
+      height: 15vh;
+      width: 100%;
+   }
+   .topbar .menuduhautpartiegauche a { /*'a' pour les liens de la class 'menu' dans topbar.php*/
+      padding-top: 5% /*3% en haut et en bas et 1.5% à gauche et droite*/
+   }
+   
+   .topbar .menuduhautpartiedroite a { /*'a' pour les liens de la class 'menu' dans topbar.php*/
+      padding-top: 5%;
+   }
+   .footer{
+      height: 20vh;
+      font-size: 2vw;
+   }
+   #twitter {
+      height: 3.3vh;
+      width: 3.5vh;
+   }
+   
+   #instagram {
+      height: 3.3vh;
+      width: 3.5vh;
+   }
+   
+   #facebook {
+      height: 3.3vh;
+      width: 3.5vh;
+   }
+   
+   #linkedin {
+      height: 3.3vh;
+      width: 3.5vh;
+   }
+}
