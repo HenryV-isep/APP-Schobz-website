@@ -347,38 +347,61 @@ input:checked + .slider:before {
 }
 
 @media (max-aspect-ratio: 3/2) {
+   body{
+      font-size: 2vw; /*vw car lorsqu'on réduit la page la police réduira aussi*/
+   }
+   
    .topbar{
       height: 15vh;
       width: 100%;
    }
    .topbar .menuduhautpartiegauche a { /*'a' pour les liens de la class 'menu' dans topbar.php*/
-      padding-top: 5% /*3% en haut et en bas et 1.5% à gauche et droite*/
+      padding-top: 7vh; /*3% en haut et en bas et 1.5% à gauche et droite*/
+      width: auto;
+      height: 15vh;
    }
    
    .topbar .menuduhautpartiedroite a { /*'a' pour les liens de la class 'menu' dans topbar.php*/
-      padding-top: 5%;
+      padding-top: 7vh;
+      width: auto;
+      height: 15vh;
+   }
+
+   .menuduhautpartiegauche:hover {
+      background-color: #DD3333;
+      opacity: 0.8;
    }
    .footer{
       height: 20vh;
       font-size: 2vw;
    }
    #twitter {
+      position: absolute;
       height: 3.3vh;
       width: 3.5vh;
+      bottom: 15vh;
+      left: 5vw;
    }
    
    #instagram {
       height: 3.3vh;
       width: 3.5vh;
+      bottom: 10vh;
+      left: 5vw;
    }
    
    #facebook {
       height: 3.3vh;
       width: 3.5vh;
+      bottom: 5vh;
+      left: 5vw;
    }
    
    #linkedin {
       height: 3.3vh;
       width: 3.5vh;
+      bottom: 1vh;
+      left: 5vw;
    }
+   
 }
