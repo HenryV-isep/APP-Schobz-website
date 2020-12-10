@@ -30,7 +30,7 @@
 
             <div class="container">
                 <div class="search-box">
-                    <input type="text" class="search" placeholder="rechercher" style="color: #615858">  <!-- style pour le couleur dans le input de la barre de recherche -->
+                    <input type="text" class="search" placeholder="Rechercher" style="color: #615858">  <!-- style pour le couleur dans le input de la barre de recherche -->
                         <button type="submit" class="search-btn">
                             <i class="fa fa-search"></i>
                         </button>
