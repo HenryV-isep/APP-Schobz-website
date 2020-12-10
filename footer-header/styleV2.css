@@ -275,6 +275,7 @@ input:checked + .slider:before {
 }
 
 
+
 .menudubaspartiecentre {
     position: fixed;
     margin-top: 0.4vw;
@@ -307,7 +308,7 @@ input:checked + .slider:before {
 }
 
 .Nous_contacter_bouton {
-    position: absolute;
+    position: fixed;
     margin-left: 26vw;
     margin-top: -3vw;
     width: 3vw;
