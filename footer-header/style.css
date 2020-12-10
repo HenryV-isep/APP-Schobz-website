@@ -403,5 +403,17 @@ input:checked + .slider:before {
       bottom: 1vh;
       left: 5vw;
    }
+   .Nous_contacter_titre {
+      font-size: 2vw;
+   }
+
+   .Nous_contacter_imput::placeholder {
+      width: 2vw;
+      height: 2vw;
+      font-size: 2vw;
+   }
+   .Nous_contacter_collect {
+      left: -100%;
+   }
    
 }
