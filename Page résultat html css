@@ -22,3 +22,27 @@ code html entre le header et footer :
 </div>
 <script src="mychart.js"></script>
 <!--fin graphique-->
+
+code css entre le header et footer :
+
+/* css pour les graphs */
+.chart{
+    text-align: center;
+    margin: auto;
+    position:relative;
+}
+
+.row {
+    margin-bottom: 4vw;
+}
+.myChart {
+    background-color: white;
+    margin: 4vw 3vw;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 8vw;
+}
+
+
