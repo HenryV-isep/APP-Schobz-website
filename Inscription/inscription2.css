@@ -3,7 +3,8 @@
     padding: 0;
     font-family: sans-serif;
 }
-.fond{
+
+/*.fond{
     height: 100%;
     width: 100%;
     background: #484848;
@@ -11,6 +12,8 @@
     background-size: cover;
     position: absolute;
 }
+*/
+
 .form-box{
     width: 380px;
     height: 520px;
@@ -122,14 +125,14 @@
 .check-box1{
     margin: 20px 10px 20px 0;
 }
-
+/*
 span {
     color: #777;
     font-size: 12px;
     top: 110px;
     position: absolute;
 }
-
+*/
 
 #connexion{
     left: 50px;
@@ -170,6 +173,6 @@ span {
 .CGU{
     margin: 8px 70px 15px 20px;
     position: center;
-    
+
 
 }
