@@ -1,8 +1,8 @@
-
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Roboto Light", serif ;
+
 }
 
 /*.fond{
@@ -16,14 +16,20 @@
 */
 
 .form-box{
-    width: 380px;
-    height: 520px;
-    position: relative;
-    margin: 3% auto;
+    width: 32vw;
+    height: 34vw;
+    position: absolute;
+    margin: 0 0 6vw;
     background:  #E4D8C7;
-    padding: 5px;
-    overflow: hidden;
+    padding: 0.5vw;
+    overflow: hidden visible;
+    left: 34vw;
+    bottom: 1.3vw;
+    border-radius: 2vw;
+
+
 }
+
 .button-box{
     width: 220px;
     margin: 35px auto;
@@ -46,10 +52,10 @@
     top: 0;
     left: 0;
     position: absolute;
-    width: 110px;
-    height: 100%;
+    width: 8vw;
+    height: 2.7vw;
     background: #ffffff;
-    border-radius: 30px;
+    border-radius: 3vw;
     transition: .5s;
 }
 #btn:hover{
@@ -58,73 +64,79 @@
 
 
 .Identification{
-    top: 130px;
+    top: 10vw;
     position: absolute;
-    width: 280px;
+    width: 22vw;
     transition: .5s;
 }
 .Connexion{
-    top: 150px;
+    top: 10vw;
     position: absolute;
-    width: 280px;
+    width: 22vw;
     transition: .5s;
 }
 
 .identif{
-    width: 100%;
-    padding: 10px 0;
-    margin: 5px 0;
+    width: 22vw;
+    padding: 1vw 0 0.1vw 0;
+    margin: 1vw 2vw 0 0;
     border-left: 0;
     border-top: 0;
     border-right: 0;
-    border-bottom: 1px solid #999;
+    border-bottom: 0.1vw  solid #999;
     outline: none;
     background: transparent;
+    font-size: small;
 }
 .identif2{
-    width: 100%;
-    padding: 10px 0;
-    margin: 2px 0;
-
+    width: 22vw;
+    padding: 1vw 0 0.1vw 0;
+    margin: 1vw 2vw 0 0;
     border-left: 0;
     border-top: 0;
     border-right: 0;
-    border-bottom: 1px solid #999;
+    border-bottom: 0.1vw solid #999;
     outline: none;
     background: transparent;
+    font-size: small;
+
 }
 .connex1{
-    width: 85%;
-    padding: 10px 50px;
+    width: 9vw;
+    padding: 1vw 11vw 1vw 7vw;
     cursor: pointer;
     display: block;
-    margin: 40px 20px;
+    margin: 3.5vw auto;
     background:#ffffff;
     border: 0;
     outline: none;
-    border-radius: 30px;
+    border-radius: 3vw;
 }
 .connex1:hover{
-    background-color: #DD3333;
+    background-color: #dd3333;
 }
 .Motdepasseoubliee{
-    width: 85%;
-    padding: 10px 50px;
+    width: 5vw ;
+    padding: 0.5vw 11vw 0.7vw 3vw;
     cursor: pointer;
     display: block;
-    margin: 30px 20px ;
+    margin: 0 auto ;
 
     background: #ffffff;
     border: 0;
     outline: none;
-    border-radius: 30px;
+    border-radius: 3vw;
 
 }
 .Motdepasseoubliee:hover{
     background-color:#DD3333 ;
 }
 .check-box1{
-    margin: 20px 10px 20px 0;
+    margin: 1vw 0.5vw 0 0;
+
+    position: center;
+    font-size: large;
+    color: #777;
 }
 /*
 span {
@@ -136,19 +148,19 @@ span {
 */
 
 #connexion{
-    left: 50px;
+    left: 5vw;
 }
 #Inscription{
-    left: 450px;
+    left: 45vw;
 }
 .genre{
-    top: 2px;
-    left: 150px;
+    top: 2vw;
+    left: 13vw;
     position: center;
-    width: 100px;
-    height: 60%;
+    width: 7vw;
+    height: 2vw;
     background:  #ffffff;
-    border-radius: 30px;
+    border-radius: 3vw;
     transition: .5s;
 }
 
@@ -157,198 +169,24 @@ span {
 }
 
 .valider{
-    width: 100%;
-    padding: 12px 45px;
+    width: 6vw;
+    padding: 1vw 10vw 1vw 7vw;
     cursor: pointer;
     display: block;
-    margin: 0.1px;
+    margin: 0.5vw auto;
     background: #ffffff;
     border: 0;
     outline: none;
-    border-radius: 30px;
+    border-radius: 3vw;
+
 }
 .valider:hover{
     background-color:#DD3333;
 }
 
 .CGU{
-    margin: 8px 70px 15px 20px;
-    position: center;
+    margin: 5vw 2vw 0 2vw;
 
-
-}
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
-.fond{
-    height: 100%;
-    width: 100%;
-    background: #484848;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-}
-.form-box{
-    width: 380px;
-    height: 520px;
-    position: relative;
-    margin: 3% auto;
-    background:  #E4D8C7;
-    padding: 5px;
-    overflow: hidden;
-}
-.button-box{
-    width: 220px;
-    margin: 35px auto;
-    position: relative;
-    box-shadow: #ffffff;
-    border-radius: 30px;
-}
-.button-box:hover{
-    background-color:#DD3333 ;
-}
-.toggle-btn{
-    padding: 10px 20px;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    outline: none;
-    position: relative;
-}
-#btn{
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 110px;
-    height: 100%;
-    background: #ffffff;
-    border-radius: 30px;
-    transition: .5s;
-}
-#btn:hover{
-    background-color:#DD3333 ;
+    position: static;
 }
 
-
-.Identification{
-    top: 130px;
-    position: absolute;
-    width: 280px;
-    transition: .5s;
-}
-.Connexion{
-    top: 150px;
-    position: absolute;
-    width: 280px;
-    transition: .5s;
-}
-
-.identif{
-    width: 100%;
-    padding: 10px 0;
-    margin: 5px 0;
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 1px solid #999;
-    outline: none;
-    background: transparent;
-}
-.identif2{
-    width: 100%;
-    padding: 10px 0;
-    margin: 2px 0;
-
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 1px solid #999;
-    outline: none;
-    background: transparent;
-}
-.connex1{
-    width: 85%;
-    padding: 10px 50px;
-    cursor: pointer;
-    display: block;
-    margin: 40px 20px;
-    background:#ffffff;
-    border: 0;
-    outline: none;
-    border-radius: 30px;
-}
-.connex1:hover{
-    background-color: #DD3333;
-}
-.Motdepasseoubliee{
-    width: 85%;
-    padding: 10px 50px;
-    cursor: pointer;
-    display: block;
-    margin: 30px 20px ;
-
-    background: #ffffff;
-    border: 0;
-    outline: none;
-    border-radius: 30px;
-
-}
-.Motdepasseoubliee:hover{
-    background-color:#DD3333 ;
-}
-.check-box1{
-    margin: 20px 10px 20px 0;
-}
-
-span {
-    color: #777;
-    font-size: 12px;
-    top: 110px;
-    position: absolute;
-}
-
-
-#connexion{
-    left: 50px;
-}
-#Inscription{
-    left: 450px;
-}
-.genre{
-    top: 2px;
-    left: 150px;
-    position: center;
-    width: 100px;
-    height: 60%;
-    background:  #ffffff;
-    border-radius: 30px;
-    transition: .5s;
-}
-
-.genre:hover{
-    background-color: #DD3333;
-}
-
-.valider{
-    width: 100%;
-    padding: 12px 45px;
-    cursor: pointer;
-    display: block;
-    margin: 0.1px;
-    background: #ffffff;
-    border: 0;
-    outline: none;
-    border-radius: 30px;
-}
-.valider:hover{
-    background-color:#DD3333;
-}
-
-.CGU{
-    margin: 8px 70px 15px 20px;
-    position: center;
-    
-
-}
