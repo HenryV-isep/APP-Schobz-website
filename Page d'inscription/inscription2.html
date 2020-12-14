@@ -2,10 +2,10 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="Footer-header.css">
+    <link rel="stylesheet" href="style.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link rel='stylesheet' type='text/css' href='Page%20Inscription.css'>
+    <link rel='stylesheet' type='text/css' href='inscription2.css'>
     <title>Inscription et connexion</title>
 
 </head>
@@ -32,7 +32,9 @@
 
 <div class="container">
     <div class="search-box">
-        <input type="text" class="search" placeholder="Rechercher" style="color: #615858">  <!-- style pour le couleur dans le input de la barre de recherche -->
+        <label>
+            <input type="text" class="search" placeholder="Rechercher" style="color: #615858">
+        </label>  <!-- style pour le couleur dans le input de la barre de recherche -->
         <button type="submit" class="search-btn">
             <i class="fa fa-search"></i>
         </button>
@@ -42,6 +44,7 @@
 <!--INSCRIPTION ET CONNEXION-->
 <div class="fond">
     <div class="form-box">
+
         <div class="button-box">
             <div id="btn"></div>
             <button type="button" class="toggle-btn" onclick="Connexion()">Connexion</button>
@@ -59,7 +62,7 @@
             </label>
 
             <label>
-                <input type="checkbox" class="check-box1" required><span>Remember Password</span>
+                <input type="checkbox" class="check-box1" required="required"/> Remember Password
             </label>
 
             <button type="submit" class="connex1">Connexion</button>
@@ -95,7 +98,7 @@
             <label>
                 <input name="NumeroDePermis" class="identif2" type="number" placeholder="Numero de Permis" required="required"/>
             </label>
-            <label>  Mentions legals & CGU  <input type="radio" class="CGU" name="choice" value="oui" required="required"/>
+            <label><input type="radio" class="CGU" name="choice" value="oui" required="required"/>Mentions legals & CGU
             </label>
             <button type="submit" class="valider">Valider </button>
         </form>
@@ -122,14 +125,14 @@
 
 <!--FOOTER-->
 
-<link rel="stylesheet" href="Footer-header.css">
+<link rel="stylesheet" href="style.css">
 <div class="footer">
 
     <span class="menudubaspartiegauche">
-        <a href="https://twitter.com"> <img id="twitter" src="twitter.png"></a>
-        <a href="https://www.instagram.com"> <img id="instagram" src="instagram.png"></a>
-        <a href="https://www.facebook.com"><img id="facebook" src="facebook.png"></a>
-        <a href="https://www.linkedin.com"><img id="linkedin" src="linkedin.png"></a>
+        <a href="https://twitter.com"> <img id="twitter" src="twitterT.png" alt=""></a>
+        <a href="https://www.instagram.com"> <img id="instagram" src="instagramT.png" alt=""></a>
+        <a href="https://www.facebook.com"><img id="facebook" src="facebookT.png" alt=""></a>
+        <a href="https://www.linkedin.com"><img id="linkedin" src="linkedinT.png" alt=""></a>
     </span>
 
     <form class="menudubaspartiecentre">
@@ -137,15 +140,21 @@
         Nous contacter
         </span>
         <div class="Nous_contacter_collect" data-validate="Merci de renseigner votre nom et prénom">
-            <input class="Nous_contacter_imput" type="text" name="name" placeholder="Nom et Prénom">
+            <label>
+                <input class="Nous_contacter_imput" type="text" name="name" placeholder="Nom et Prénom">
+            </label>
             <span class="focus-Nous_contacter"></span>
             <span></span></div>
         <div class="Nous_contacter_collect" data-validate="Merci de renseigner votre adresse mail valide: e@a.x">
-            <input class="Nous_contacter_imput" type="text" name="email" placeholder="E-mail" >
+            <label>
+                <input class="Nous_contacter_imput" type="text" name="email" placeholder="E-mail" >
+            </label>
             <span class="focus-Nous_contacter"></span>
             <span></span></div>
         <div class="Nous_contacter_collect_imput_textarea" data-validate="Merci de renseigner votre message.">
-            <textarea class="Nous_contacter_imput_textarea" name="message" placeholder="Votre message"></textarea>
+            <label>
+                <textarea class="Nous_contacter_imput_textarea" name="message" placeholder="Votre message"></textarea>
+            </label>
             <span class="focus-Nous_contacter"></span>
         </div>
         <input type="submit" value="Envoyer"
@@ -164,9 +173,9 @@
     <div class="telephone">
         <a href="">07 81 06 65 85</a>
     </div>
-    <img id="maison" src="maison.png">
-    <img id="horloge" src="horloge.png">
-    <img id="telephone" src="telephone.png">
+    <img id="maison" src="maisonT.png" alt="">
+    <img id="horloge" src="horlogeT.png" alt="">
+    <img id="telephone" src="telephoneT.png" alt="">
 </div>
 
 </body>
