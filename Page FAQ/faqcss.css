@@ -203,11 +203,8 @@ h2.Titre {
     font-size: 12px;
 }
 
-<<<<<<< HEAD
 /* Footer à ajouter */
-=======
 /* Zone media query */
->>>>>>> Media-Queries
 
 @media (max-aspect-ratio:3/2) {
 
@@ -257,9 +254,4 @@ h2.Titre {
         width: 25vw;
         height: 25vh;
     }
-<<<<<<< HEAD
-=======
-
-    
->>>>>>> Media-Queries
 }
