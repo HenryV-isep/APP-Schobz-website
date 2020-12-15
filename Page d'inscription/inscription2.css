@@ -190,3 +190,69 @@ span {
     position: static;
 }
 
+#popup_CGU {
+    text-decoration: none;
+}
+
+
+.p_cgu {font-family: 'Roboto';
+    font-weight:initial;}
+
+.mdp_mail_imput {
+    border: none;
+    border-radius: 0.2vw;
+    margin: 0;
+    width: 20vw;
+    transition: 0.2s linear;
+}
+
+.mdp_mail_imput::placeholder {
+    padding: 0.2vw;
+    font-size: 1vw;
+ }
+ .mdp_mail_imput:hover {
+    background-color: #DD3333;
+ }
+ .mdp_mail_imput:hover::placeholder{
+    color: black;
+ }
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+.overlay:target {
+    visibility: visible;
+    overflow: scroll;
+    opacity: 1;
+  }
+
+  .popup {
+    font-family: "Roboto";
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }

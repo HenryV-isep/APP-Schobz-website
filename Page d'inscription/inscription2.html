@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel='stylesheet' type='text/css' href='../footer-header/style.css'>
     <link rel='stylesheet' type='text/css' href='inscription2.css'>
     <title>Inscription et connexion</title>
 
@@ -66,7 +67,7 @@
             </label>
 
             <button type="submit" class="connex1">Connexion</button>
-            <input type="button" class="Motdepasseoubliee" onclick="window.location.href='';" value="Mot de passe oubliè">
+            <input type="button" class="Motdepasseoubliee" onclick="window.location.href='#mdp_oublie';" value="Mot de passe oublié">
         </form>
 
         <form id="Inscription" class="Identification" method="post">
@@ -102,10 +103,48 @@
             <label>
                 <input name="Numéro auto école" class="identif2" type="number"  placeholder="Numéro Auto école" required="required"/>
             </label>
-            <label><input type="radio" class="CGU" name="choice" value="oui" required="required"/>Mentions legals & CGU
+            <label><input type="radio" class="CGU" name="choice" value="oui" required="required"/> J'ai lu et j'accepte les <a class="link_CGU" href=#popup_CGU>mentions legales & CGU </a>
             </label>
             <button type="submit" class="valider">Valider </button>
         </form>
+
+        <div id="popup_CGU" class="overlay">
+            <div class="popup">
+                <h2>Mentions légales et CGU</h2>
+                <a class="close" href="#">&times;</a>
+                <span class="content">
+                    <p class="p_cgu">Téléphone : 0781066685<br/><br/>
+                    <b>Edition du site : </b><br/><br/>
+                    Le site ‘driverpsychotechniquetest.fr’ est édité par la société SCHOBZ Corporation. Capital social de 60 euros, dont le siège social est situé 10 rue de vanves, 92130 Issy-les-moulineaux <br/><br/> 
+                    <b>Responsable de rédaction :</b><br/><br/>
+                    ZENNADI Kais <br/>
+                    BOSSARD Gabin<br/><br/>
+                    <b>Hébergeur : </b><br/><br/>
+                    Le site ‘driverpsychotechniquetest.fr’ est hébergé par la société ISEP Paris <br/>
+                    Adresse : 28 rue Notre Dame des Champs, 75006 Paris<br/><br/>
+                    <b>L’utilisation des données personnelles : </b><br/><br/>
+                    Aucune information personnelle ne sera collectée à votre insu. les informations que vous nous communiquez lors de l’inscription, renseignement, ou d’une demande de devis transmise par courrier, téléphone, e-mail ou par formulaire sont uniquement destinées à un traitement administratif et commercial de votre demande par la société ISEP Paris.
+                    Conformément à la loi “ Informatique et Libertés”  n 78-17 du 6 janvier 1978, vous disposez d’un droit d'accès, de rectification et d’opposition aux données personnelles vous concernant. 
+                    Afin de l’exercer, il suffit de nous en faire la demande par écrit à la coordonnée suivante : <br/>
+                    ( mettre une adresse mail ou adresse postale ) <br/><br/>
+                    <b>Droit d’auteur / copyright </b><br/><br/>
+                    l’ensemble du contenu du présent site Internet, est la propriété de la société ISEP Paris, il est protégé par les lois en vigueur de la législation française sur la propriété intellectuelle.<br/><br/>
+                    Aucun élément de ce site ne peut être copié, reproduit, détourné ou dénaturé, sur quelque support que ce soit, sans constituer un acte de contrefaçon au sens des articles L 335-2 et suivants du code de la propriété intellectuelle. 
+                </p>
+                </span>
+            </div>
+        </div>
+        <div id="mdp_oublie" class="overlay">
+            <div class="popup">
+                <h2>
+                    Merci de renseigner votre adresse mail. Nous vous y enverrons un message pour réinitialiser le mot de passe.
+                </h2>
+                <a class="close" href="#">&times;</a>
+                <span class="content">
+                    <input class="mdp_mail_imput" type="text" name="email" placeholder="E-mail" >
+                </span>
+            </div>
+        </div>
 
     </div>
 </div>
