@@ -415,9 +415,7 @@ input:checked + .slider:before {
    .Nous_contacter_imput_textarea {
       position: absolute;
       left: 35%;
-      bottom: 10%;
-      bottom: 20%;
-      bottom: 20%;
+      bottom: 1vh;
       width: 20vw;
       height: 5vh;
    }
@@ -436,11 +434,8 @@ input:checked + .slider:before {
    .Nous_contacter_bouton {
       width: 10vw;
       height: 2vw;
-      bottom: 1%;
-      left: 40%;
-   }
-   .Nous_contacter_bouton::placeholder {
-      font-size: 1vw;
-   }
+      bottom: 5%;
+      left: 5%;
+      font-size: 50%;   }
 
 }
