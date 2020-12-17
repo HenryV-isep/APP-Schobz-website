@@ -59,6 +59,13 @@ script {
     margin-left: 65vw;
 }
 
+.tableau{
+    text-align: center;
+    position: relative;
+    width: 26vw;
+    margin-top: -1vw;
+    margin-left: 45vw;
+}
 
 .chart3 {
     text-align: center;
