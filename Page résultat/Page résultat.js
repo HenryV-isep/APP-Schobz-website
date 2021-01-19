@@ -43,7 +43,7 @@ let chart2 = new Chart(myChart2, {
     },
     options: {
         title: {
-            text: "Résultats des étudiants)",
+            text: "Résultats des étudiants",
             display: true
         },
         legend: {
@@ -86,7 +86,7 @@ let chart3 = new Chart(myChart3, {
     },
     options: {
         title: {
-            text: "Skills",
+            text: "Résultats des différents capteurs",
             display: true
         }
     }
@@ -109,7 +109,7 @@ let chart4 = new Chart(myChart4, {
     },
     options: {
         title: {
-            text: "Population of the European Union (in mio)",
+            text: "Temps passé sur les tests (en min)",
 
             display: true
 
