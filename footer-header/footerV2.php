@@ -8,7 +8,7 @@
         <a href="https://www.linkedin.com"><img id="linkedin" src="linkedin.png"></a>
     </span>
 
-        <form class="menudubaspartiecentre">
+        <form class="menudubaspartiecentre" action="mailto:clothildehr@gmail.com" method="post" enctype="text/plain">
         <span class="Nous_contacter_titre">
         Nous contacter
         </span>
