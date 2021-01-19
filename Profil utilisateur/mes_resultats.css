@@ -18,10 +18,11 @@ h2{
 .presentation_resultat{  /*Réglage général du block */
     display: block;
     position: absolute;
+    z-index: 1;
     top: 6vw;
     right: 2vw;
     left: 20vw;
-    height: 70vw;
+    height: 40vw;
     background-color: #b4aea4;
     padding: 4vw;
     color: #484848;
@@ -84,4 +85,25 @@ script {
 }
 
 
+/* Résultats et historique */
+#resulthistory {
+    width: 50%;
+}
 
+
+#resulthistory td, #resulthistory th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }  
+
+#resulthistory tr:nth-child(even){background-color: #f2f2f2;}
+
+#resulthistory tr:hover {background-color: #ddd;}
+
+#resulthistory th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #e4d8c7;
+    color: #484848;
+}

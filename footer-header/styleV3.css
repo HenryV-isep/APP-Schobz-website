@@ -13,6 +13,7 @@ body{
 .topbar{
     background-color : #e4d8c7;
     height: 5vw;
+    z-index: 3;
     width: 100%; /*Pour que la barre prenne bien 100% de la largeur de la page*/
     line-height: 1.1vw;
     padding: 0 2%;
@@ -52,6 +53,7 @@ body{
 .container{
     width: 25vw;
     height: 2.1vw;
+    z-index: 5;
     position: fixed;   /*en scrolant la barre rechercher reste bien en haut*/
     top: 1.2vw;
     left: 42%;
@@ -99,6 +101,7 @@ input[type="text"]
 .footer{
     background-color : #e4d8c7;
     position: absolute;
+    z-index: 3;
     bottom: 0;
     margin-top: 50vw;
     width: 100%;

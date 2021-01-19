@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
-    <link rel="stylesheet" href="../Footer-header/Footer-header.css">
-    <link rel="stylesheet" href="Profil%20utilisateur%20Apercu%20du%20compte.css">
-    <link rel="stylesheet" type="text/css"  href="Profil%20utilisateur%20Mes%20resultats.css">
+    <link rel="stylesheet" href="../Footer-header/styleV3.css">
+    <link rel="stylesheet" href="../Profil utilisateur/apercu_du_compte.css">
+    <link rel="stylesheet" href="../Profil utilisateur/mes_informations.css">
+    <link rel="stylesheet" type="text/css"  href="../Profil utilisateur/mes_resultats.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -59,7 +60,52 @@
     <h1><img class="titreicon" src="../Image/result.png" alt=""></h1>
     <h2>LES RESULTATS</h2>
     <p> Vous pouvez consulter vos résultats.</p>
+    <div class="containtresults">
+        <table id="resulthistory">
+            <tr>
+                <th>Nom</th>
+                <th>Date</th>
+                <th>Résultats</th>
+            </tr>
+            <?php
+            $dBHost = "localhost";
+            $dBUser = "root";
+            $dBPassword = "root";
+            $dBDatabase = "schobz_data";
+            $port = "3306";
+            $conn = mysqli_connect($dBHost, $dBUser, $dBPassword, $dBDatabase, $port);
+            if (!$conn) {
+                die("Échec de la connexion:" . mysqli_connect_error());
+            }
+            $nom = "SELECT  nom_du_test FROM test JOIN personne WHERE nom=Cassoulet";
+            $resultat = "SELECT mesure_de_donnee FROM test WHERE nom_du_test='$nom'";
+            
+            $compteur = "SELECT count(*) from personne JOIN test WHERE nom=Cassoulet";
+            
+            if (isset($nom,$periode,$resultat)) {
+                $periode = array('');   
+                foreach (range(1,$compteur) as $i) {
+                        if ($i > 1) {
+                            $j = $i - 1;
+                            $periode .= "SELECT periode FROM test JOIN personne WHERE DATEDIF(periode,'$periode[$j]')>0 AND nom=Cassoulet";
+                        } else {
+                            $periode .= "SELECT periode FROM test JOIN personne WHERE nom=Cassoulet";
+                        }
+                    echo "<tr>
+                    <td>'$nom'</td>
+                    <td>'$periode'</td>
+                    <td>'$resultat'</td>
+                    </tr>";
+                }
+            } else {
+                echo "<p> Une erreur s'est produite lors de l'affichage des résultats: " . $conn->error."</p>";
+            }
+            ?>
+        </table>
+    </div>
 </div>
+<!-- Partie historique des résultats-->
+
 
 <div class="chart">
     <div class="row">
