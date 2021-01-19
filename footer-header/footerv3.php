@@ -23,7 +23,7 @@
                 <textarea class="Nous_contacter_imput_textarea" name="message" placeholder="Votre message"></textarea>
                 <span class="focus-Nous_contacter"></span>
             </div>
-            <input type="submit" value="Envoyer" class="Nous_contacter_bouton" style="color: #484848"/>
+            <input type="submit"  value="envoyer" class="Nous_contacter_bouton" style="color: #484848"/>
         </form>
         <div class="adresse_premierepartie">
             <a href="">10 rue de vanves, 92130</a>
