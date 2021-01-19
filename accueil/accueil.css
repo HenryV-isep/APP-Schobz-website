@@ -1,0 +1,62 @@
+.fondaccueil{
+    width: 99vw;
+}
+
+.CGU{
+    margin: 2vw 2vw 0 1vw;
+    position: absolute;
+    overflow: hidden visible;
+}
+.link_CGU{
+    margin-bottom: 6vw;
+    margin-left: 4.5vw;
+}
+#popup_CGU_haut {
+    text-decoration: none;
+}
+
+
+.p_cgu {
+    font-family: "Roboto", sans-serif;
+    font-weight:initial;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    overflow: scroll;
+    opacity: 1;
+}
+
+.popup {
+    font-family: "Roboto", sans-serif;
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
