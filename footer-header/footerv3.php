@@ -6,35 +6,10 @@
         <a href="https://www.facebook.com"><img id="facebook" src="facebook.png"></a>
         <a href="https://www.linkedin.com"><img id="linkedin" src="linkedin.png"></a>
     </span>
-        <form class="menudubaspartiecentre">
+        <form class="menudubaspartiecentre" action="mailto:clothildehr@gmail.com" method="post" enctype="text/plain">
         <span class="Nous_contacter_titre">
         Nous contacter
         </span>
- <?php
-if(isset($_POST['mailform']))
-$header="MIME-Version: 1.0\r\n";
-$header.='From:"clothildehr@gmail.com"<clothildehr@gmail.com>'."\n";
-$header.='Content-Type:text/html; charset="uft=8"'."\n";
-$header.='Content-Transfer-Encoding: 8bit';
-
-$message='
-<html>
-    <body>
-        <div align="center">
-        Jai envoyé ce mail avec PHP !
-        <br />
-
-           </div>
-    </body>
-</html>
-
-mail("clothildehr@gmail.com,"Salut test", $message,$header);
-
-';
-
-mail("clothildehr@gmail.com", "question par rapport au site", $message);
-}
-?>
 
             <div class="Nous_contacter_collect" data-validate="Merci de renseigner votre nom et prénom">
                 <input class="Nous_contacter_imput" type="text" name="name" placeholder="Nom et Prénom">
