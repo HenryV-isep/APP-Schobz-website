@@ -68,38 +68,27 @@
                 <th>Résultats</th>
             </tr>
             <?php
-            $dBHost = "localhost";
-            $dBUser = "root";
-            $dBPassword = "root";
-            $dBDatabase = "schobz_data";
-            $port = "3306";
-            $conn = mysqli_connect($dBHost, $dBUser, $dBPassword, $dBDatabase, $port);
-            if (!$conn) {
-                die("Échec de la connexion:" . mysqli_connect_error());
-            }
-            $nom = "SELECT  nom_du_test FROM test JOIN personne WHERE nom=Cassoulet";
-            $resultat = "SELECT mesure_de_donnee FROM test WHERE nom_du_test='$nom'";
-            
-            $compteur = "SELECT count(*) from personne JOIN test WHERE nom=Cassoulet";
-            
-            if (isset($nom,$periode,$resultat)) {
-                $periode = array('');   
-                foreach (range(1,$compteur) as $i) {
-                        if ($i > 1) {
-                            $j = $i - 1;
-                            $periode .= "SELECT periode FROM test JOIN personne WHERE DATEDIF(periode,'$periode[$j]')>0 AND nom=Cassoulet";
-                        } else {
-                            $periode .= "SELECT periode FROM test JOIN personne WHERE nom=Cassoulet";
-                        }
-                    echo "<tr>
-                    <td>'$nom'</td>
-                    <td>'$periode'</td>
-                    <td>'$resultat'</td>
-                    </tr>";
+                $dBHost = "localhost";
+                $dBUser = "root";
+                $dBPassword = "root";
+                $dBDatabase = "schobz_data";
+                $port = "3306";
+                $conn = mysqli_connect($dBHost, $dBUser, $dBPassword, $dBDatabase, $port);
+                if (!$conn) {
+                    die("Échec de la connexion:" . mysqli_connect_error());
                 }
-            } else {
-                echo "<p> Une erreur s'est produite lors de l'affichage des résultats: " . $conn->error."</p>";
-            }
+                function table() {
+                    $sql = "SELECT periode, nom_du_test, mesure_de_donnee FROM personne JOIN test ON `test`.`cle_etrangere_personne`=`personne`.`id_Personne` JOIN resultats ON `resultats`.`cle_etrangere_Test` = `test`.`id_test` WHERE nom='Cassoulet' ORDER BY periode DESC"; #Normalement, ça fera une liste
+                    $resultData = mysqli_query($conn,$sql);
+                    while($row = $resultData->fetch_assoc()) {
+                        echo '<tr>
+                            <td>'.$row['periode'].'</td>
+                            <td>'.$row['nom_du_test'].'</td>
+                            <td>'.$row['mesure_de_donnee'].'</td>
+                            </tr>';
+                    }
+                }
+                $conn->close();
             ?>
         </table>
     </div>
