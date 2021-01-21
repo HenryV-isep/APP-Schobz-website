@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="../footer_header/styleV3.css">
     <link rel="stylesheet" href="../profil_utilisateur/apercu_du_compte.css">
     <link rel="stylesheet" href="../Profil_utilisateur/mes_informations.css">
-    <link rel="stylesheet" type="text/css"  href="../Profil utilisateur/mes_resultats.css">
+    <link rel="stylesheet" href="../profil_utilisateur/mes_resultats.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -63,7 +63,7 @@
     <div class="containtresults">
         <table id="resulthistory">
             <tr>
-                <th>Nom</th>
+                <th>Nom du test</th>
                 <th>Date</th>
                 <th>Résultats</th>
             </tr>
