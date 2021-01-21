@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
-    <link rel="stylesheet" href="../Footer-header/styleV3.css">
-    <link rel="stylesheet" href="../Profil utilisateur/apercu_du_compte.css">
-    <link rel="stylesheet" href="../Profil utilisateur/mes_informations.css">
+    <link rel="stylesheet" href="../footer_header/styleV3.css">
+    <link rel="stylesheet" href="../profil_utilisateur/apercu_du_compte.css">
+    <link rel="stylesheet" href="../Profil_utilisateur/mes_informations.css">
     <link rel="stylesheet" type="text/css"  href="../Profil utilisateur/mes_resultats.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
