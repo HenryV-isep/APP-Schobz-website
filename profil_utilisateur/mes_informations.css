@@ -20,7 +20,7 @@ h2{
     top: 6vw;
     right: 2vw;
     left: 20vw;
-    height: 70vw;
+    height: 75vw;
     background-color: #E4D8C7;
     padding: 4vw;
     color: #484848;
@@ -50,7 +50,7 @@ h2{
     border-radius: 0.5vw;
     padding: 0.5vw;
     width: 16vw;
-    font-size: large;
+    font-size: x-small;
 }
 
 .remplissage:hover {  /*Changement de couleur lorsque la souris passe dans une des zones à remplir*/

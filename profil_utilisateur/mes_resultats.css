@@ -1,11 +1,11 @@
 /*LES RESULTATS*/
 
 .titreicon{  /*Placement de l'icon Les resultats*/
-    width: 3.7vw;
+    width: 3.9vw;
     display: block;
     float: left;
     margin-left: -2.2vw;
-    margin-top: -3vw;
+
 }
 
 h2{
@@ -18,12 +18,11 @@ h2{
 .presentation_resultat{  /*Réglage général du block */
     display: block;
     position: absolute;
-    z-index: 1;
     top: 6vw;
     right: 2vw;
     left: 20vw;
-    height: 40vw;
-    background-color: #b4aea4;
+    height: 64vw;
+    background-color: #E4D8C7;
     padding: 4vw;
     color: #484848;
 }
@@ -48,7 +47,7 @@ script {
     text-align: center;
     position: relative;
     width: 25vw;
-    margin-top: -25vw;
+    margin-top: -20vw;
     margin-left: 25vw;
 }
 
@@ -56,7 +55,7 @@ script {
     text-align: center;
     position: relative;
     width: 25vw;
-    margin-top: -25vw;
+    margin-top: -20vw;
     margin-left: 65vw;
 }
 
@@ -84,7 +83,6 @@ script {
     margin: 4vw 3vw;
 }
 
-
 /* Résultats et historique */
 #resulthistory {
     width: 50%;
@@ -92,18 +90,19 @@ script {
 
 
 #resulthistory td, #resulthistory th {
-    border: 1px solid #ddd;
+    border: 5px solid #ddd;
+    background-color: #f2f2f2;
     padding: 8px;
   }  
 
 #resulthistory tr:nth-child(even){background-color: #f2f2f2;}
 
-#resulthistory tr:hover {background-color: #ddd;}
+
+#resulthistory td:hover {background-color: #ddd;}
 
 #resulthistory th{
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    background-color: #e4d8c7;
     color: #484848;
 }
