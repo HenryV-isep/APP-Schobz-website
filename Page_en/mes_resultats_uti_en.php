@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
-    <title>Manager profile/My result</title>
+    <title>User profile/My result</title>
 
 </head>
 <body>
