@@ -16,7 +16,7 @@ h2{
 
 
 .presentation_resultat{  /*Réglage général du block */
-    display: block;
+    display: solid;
     position: absolute;
     top: 6vw;
     right: 2vw;
@@ -84,7 +84,13 @@ script {
 }
 
 /* Résultats et historique */
+
+#graph {
+    display: block;
+}
+
 #resulthistory {
+    display: none;
     width: 50%;
 }
 

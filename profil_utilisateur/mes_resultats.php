@@ -3,8 +3,8 @@
 <head>
     <link rel="stylesheet" href="../footer_header/styleV3.css">
     <link rel="stylesheet" href="../profil_utilisateur/apercu_du_compte.css">
-    <link rel="stylesheet" href="../Profil_utilisateur/mes_informations.css">
-    <link rel="stylesheet" href="../Profil_utilisateur/mes_resultats.css">
+    <link rel="stylesheet" href="../profil_utilisateur/mes_informations.css">
+    <link rel="stylesheet" href="../profil_utilisateur/mes_resultats.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -56,6 +56,11 @@
 
 <!--LES RESULTATS-->
 
+
+<!-- Partie historique des résultats-->
+
+
+<button onclick="historique()" style="position: absolute; left: 70%; top: 30%;z-index: 10;"> Historique des résultats </button>
 <div class="presentation_resultat">
     <h1><img class="titreicon" src="../Image/result.png" alt=""></h1>
     <h2>LES RESULTATS</h2>
@@ -112,10 +117,8 @@
             ?>
     </div>
 </div>
-<!-- Partie historique des résultats-->
 
-
-<div class="chart">
+<div class="chart" id="graph">
     <div class="row">
         <div class="chart1">
             <canvas id="myChart" width="200" height="150"></canvas>
@@ -133,7 +136,7 @@
         </div>
     </div>
 </div>
-<script src="Profil%20utilisateur%20Mes%20resultats.js"></script>
+<script src="../profil_utilisateur/mes_resultats.js"></script>
 
 
 <!--FOOTER-->
