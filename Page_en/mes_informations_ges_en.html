@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
-    <link rel="stylesheet" href="../footer_header/styleV3.css">
-    <link rel="stylesheet" href="../profil_utilisateur/apercu_du_compte.css">
-    <link rel="stylesheet" href="../Profil_utilisateur/mes_informations.css">
-    <link rel="stylesheet" href="../Profil_utilisateur/mes_resultats.css">
+    <link rel="stylesheet" href="../Footer-header/Footer-header.css">
+    <link rel="stylesheet" href="Profil%20gestionnaire%20Apercu%20du%20compte.css">
+    <link rel="stylesheet" type="text/css"  href="Profil%20gestionnaire%20Les%20resultats.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
-    <title>User profile/My result</title>
+    <title>Manager profile/My results</title>
 
 </head>
 <body>
@@ -20,7 +19,7 @@
 
 <div class="topbar">
 
-   <span class="menuduhautpartiegauche"> <!-- span c'est pour aligner les liens -->
+    <span class="menuduhautpartiegauche"> <!-- span c'est pour aligner les liens -->
         <a href="">Home</a>
         <a href="">My account</a>
         <a href="">About us</a>
@@ -45,12 +44,13 @@
 
 <nav>
     <ul>
-        <li> Hello, <br/> </li>
-        <li><a class="lien" href="Profil%20utilisateur%20Apercu%20du%20compte.html"><img class="image" src="../Image/user.png" alt="">Aperçu du compte</a></li>
-        <li><a class="lien" href="Profil%20utilisateur%20Mes%20informations.html"><img class="image" src="../Image/information.png" alt=""> Mes informations</a></li>
-        <li><a class="lien" href="Profil%20utilisateur%20Mes%20resultats.html"><img class="image" src="../Image/result.png" alt="">Mes résultats </a></li>
-        <li><a class="lien" href="Profil%20utilisateur%20Test.html"><img class="image" src="../Image/play.png" alt="">Test</a></li>
-        <li><a class="lien" href="Deconnexion.html"><img class="image" src="../Image/deconnexion.png" alt="">Déconnexion</a></li>
+        <li> Bonjour, <br/> Juliette Sebillotte </li>
+        <li><a class="lien" href="Profil%20gestionnaire%20Apercu%20du%20compte.html"><img class="image" src="../Image/user.png" alt="">Account overview</a></li>
+        <li><a class="lien" href="Profil%20gestionnaire%20Mes%20informations.html"><img class="image" src="../Image/information.png" alt=""> My information</a></li>
+        <li><a class="lien" href="Profil%20gestionnaire%20Les%20resultats.html"><img class="image" src="../Image/result.png" alt="">The results </a></li>
+        <li><a class="lien" href="Profil%20gestionnaire%20Test.html"><img class="image" src="../Image/play.png" alt="">Test</a></li>
+        <li><a class="lien" href="Profil%20gestionnaire%20Gestion.html"><img class="image" src="../Image/gestion.png" alt="">Manage</a></li>
+        <li><a class="lien" href="Deconnexion.html"><img class="image" src="../Image/deconnexion.png" alt="">Disconnection</a></li>
     </ul>
 </nav>
 
@@ -58,62 +58,9 @@
 
 <div class="presentation_resultat">
     <h1><img class="titreicon" src="../Image/result.png" alt=""></h1>
-    <h2>MY RESULTS</h2>
-    <p> You can consult your results.</p>
-    <div class="containtresults">
-        <?php
-                //tu fais sa nomalement sur un autre page php, faut arreté du mettre tout le code sur la même page
-                $dBHost = "localhost";
-                $dBUser = "root";
-                $dBPassword = "root";
-                $dBDatabase = "schobz_data";
-                $port = "3306";
-                $conn = mysqli_connect($dBHost, $dBUser, $dBPassword, $dBDatabase, $port);
-                if (!$conn) {
-                die("Échec de la connexion:" . mysqli_connect_error());
-                }
-                function table() {
-                    global $conn;
-                    $affichage = '';
-                    $sql = "SELECT periode, nom_du_test, mesure_de_donnee FROM personne JOIN test ON `test`.`cle_etrangere_personne`=`personne`.`id_Personne` JOIN resultats ON `resultats`.`cle_etrangere_Test` = `test`.`id_test` WHERE nom='Cassoulet' ORDER BY periode DESC"; #Normalement, ça fera une liste
-                    $resultData = mysqli_query($conn,$sql);
-                    while($row = mysqli_fetch_assoc($resultData)) {
-                        $affichage = '
-                            <tr>
-        <td>'.$row['periode'].'</td>
-        <td>'.$row['nom_du_test'].'</td>
-        <td>'.$row['mesure_de_donnee'].'</td>
-        </tr>';
-        }
-        return $affichage;
-        }
-
-        $sql = "SELECT mesure_de_donnee FROM `resultats` JOIN test ON `resultats`.`cle_etrangere_Test` = `test`.`id_test` JOIN `personne` ON `test`.`cle_etrangere_personne`=`personne`.`id_Personne` WHERE nom='Cassoulet'";
-        $resultData = mysqli_query($conn,$sql);
-        $row = mysqli_fetch_assoc($resultData);
-        if (isset($row)) {
-        $affichage = table();
-        echo '
-        <table id="resulthistory">
-            <thead>
-            <tr>
-                <th>Name of the test</th>
-                <th>Date</th>
-                <th>Results</th>
-            </tr>
-            <thead>
-            <tbody>
-            '.$affichage.'
-            </tbody>
-        </table>';
-        } else {
-        echo 'It looks like you didn \'t take a test ';
-        }
-        ?>
-    </div>
+    <h2>LES RESULTATS</h2>
+    <p> You can consult user's results.</p>
 </div>
-<!-- Partie historique des résultats-->
-
 
 <div class="chart">
     <div class="row">
@@ -133,7 +80,7 @@
         </div>
     </div>
 </div>
-<script src="Profil%20utilisateur%20Mes%20resultats.js"></script>
+<script src="Profil%20gestionnaire%20Les%20resultats.js"></script>
 
 
 <!--FOOTER-->

@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
-    <title>User profile/My result</title>
+    <title>Manager profile/My result</title>
 
 </head>
 <body>
@@ -46,11 +46,12 @@
 <nav>
     <ul>
         <li> Hello, <br/> </li>
-        <li><a class="lien" href="Profil%20utilisateur%20Apercu%20du%20compte.html"><img class="image" src="../Image/user.png" alt="">Aperçu du compte</a></li>
-        <li><a class="lien" href="Profil%20utilisateur%20Mes%20informations.html"><img class="image" src="../Image/information.png" alt=""> Mes informations</a></li>
-        <li><a class="lien" href="Profil%20utilisateur%20Mes%20resultats.html"><img class="image" src="../Image/result.png" alt="">Mes résultats </a></li>
+        <li><a class="lien" href="Profil%20utilisateur%20Apercu%20du%20compte.html"><img class="image" src="../Image/user.png" alt="">Account overview</a></li>
+        <li><a class="lien" href="Profil%20utilisateur%20Mes%20informations.html"><img class="image" src="../Image/information.png" alt=""> My information</a></li>
+        <li><a class="lien" href="Profil%20utilisateur%20Mes%20resultats.html"><img class="image" src="../Image/result.png" alt="">The results </a></li>
         <li><a class="lien" href="Profil%20utilisateur%20Test.html"><img class="image" src="../Image/play.png" alt="">Test</a></li>
-        <li><a class="lien" href="Deconnexion.html"><img class="image" src="../Image/deconnexion.png" alt="">Déconnexion</a></li>
+        <li><a class="lien" href="Profil%20gestionnaire%20Gestion.html"><img class="image" src="../Image/gestion.png" alt="">Management</a></li>
+        <li><a class="lien" href="Deconnexion.html"><img class="image" src="../Image/deconnexion.png" alt="">Disconnection</a></li>
     </ul>
 </nav>
 
@@ -59,7 +60,7 @@
 <div class="presentation_resultat">
     <h1><img class="titreicon" src="../Image/result.png" alt=""></h1>
     <h2>MY RESULTS</h2>
-    <p> You can consult your results.</p>
+    <p> You can consult the results.</p>
     <div class="containtresults">
         <?php
                 //tu fais sa nomalement sur un autre page php, faut arreté du mettre tout le code sur la même page
@@ -150,7 +151,7 @@
 
     <form class="menudubaspartiecentre">
         <span class="Nous_contacter_titre">
-        Nous contacter
+        Contact us
         </span>
         <div class="Nous_contacter_collect" data-validate="Merci de renseigner votre nom et prénom">
             <input class="Nous_contacter_imput" type="text" name="name" placeholder="Nom et Prénom">
