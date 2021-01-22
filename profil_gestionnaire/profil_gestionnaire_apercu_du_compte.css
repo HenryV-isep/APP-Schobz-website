@@ -1,0 +1,149 @@
+/*BARRE DE NAVIGATION GENERAL*/
+
+ul{
+    text-decoration: none;
+}
+
+
+body{
+    font-family: "Roboto Light", sans-serif;
+}
+
+.lien{
+    text-decoration: none;
+    color: #484848;
+}
+
+
+.image { /*Reglage sur les icons*/
+    width: 2.2vw;
+    display: flow;
+    float: left;
+    margin-right: 0.5vw;
+    margin-top: -0.2vw;
+}
+
+
+.welcome{  /*Reglage sur le visu bienvenue*/
+    position: absolute;
+    top: 5vw;
+    left: 30vw;
+    height: 35vw;
+    width: 45vw;
+}
+
+
+ul li:nth-child(1) /*Bonjour*/
+{
+    background-color: #E4D8C7;
+    padding: 0.8vw;
+    width: 15vw;
+    margin: 6vw 2vw 2vw;
+    text-decoration: none;
+    display: block;
+    color: #484848;
+}
+
+
+ul li:nth-child(2) /*Aperçu du compte */
+{
+    background-color: #E4D8C7;
+    text-decoration: none;
+    display: block;
+    padding: 0.8vw;
+    width: 15vw;
+    margin: 1vw 2vw;
+}
+
+ul li:nth-child(2):hover /*Aperçu du compte */
+{
+    color: #dd3333;
+    transition: 0.5s;
+    opacity: 70%;
+}
+
+
+ul li:nth-child(3) /*Mes informations*/
+{
+    background-color: #E4D8C7;
+    list-style-type: none;
+    padding: 0.8vw;
+    width: 15vw;
+    margin: 1vw 2vw;
+}
+
+ul li:nth-child(3):hover /*Mes informations*/
+{
+    color: #dd3333;
+    transition: 0.5s;
+    opacity: 70%;
+}
+
+
+ul li:nth-child(4) /*Les résultats*/
+{
+    background-color: #E4D8C7;
+    list-style-type: none;
+    padding: 0.8vw;
+    width: 15vw;
+    margin: 1vw 2vw;
+}
+
+ul li:nth-child(4):hover /*Les résultats*/
+{
+    color: #dd3333;
+    transition: 0.5s;
+    opacity: 70%;
+}
+
+
+ul li:nth-child(5) /*Test*/
+{
+    background-color: #E4D8C7;
+    display: block;
+    padding: 0.8vw;
+    width: 15vw;
+    margin: 1vw 2vw;
+}
+
+ul li:nth-child(5):hover /*Test*/
+{
+    color: #dd3333;
+    transition: 0.5s;
+    opacity: 70%;
+}
+
+
+ul li:nth-child(6) /*Gestion*/
+{
+    background-color: #E4D8C7;
+    display: block;
+    padding: 0.8vw;
+    width: 15vw;
+    margin: 1vw 2vw;
+}
+
+ul li:nth-child(6):hover /*Gestion*/
+{
+    color: #dd3333;
+    transition: 0.5s;
+    opacity: 70%;
+}
+
+
+ul li:nth-child(7) /*Deconnexion*/
+{
+    background-color: #E4D8C7;
+    display: block;
+    padding: 0.8vw;
+    width: 15vw;
+    margin: 2vw 2vw;
+}
+
+ul li:nth-child(7):hover /*Deconnexion*/
+{
+    color: #dd3333;
+    transition: 0.5s;
+    opacity: 70%;
+}
+

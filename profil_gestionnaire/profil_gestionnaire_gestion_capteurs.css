@@ -1,0 +1,145 @@
+.lien_gestion{
+    text-decoration: none;
+    color: #484848;
+}
+
+.naviguation_gestion{
+    text-decoration: none;
+    color: #484848;
+    margin-top: -3vw;
+}
+.presentation_gestion{
+    text-decoration: none;
+}
+
+
+.container{
+    width: 25vw;
+    height: 2.1vw;
+    position: absolute;   /*en scrolant la barre rechercher reste bien en haut*/
+    top: 27%;
+    left: 30%;
+}
+
+.search-box{
+    width: 25vw; /*longueur de la barre de recherche*/
+    height: 2.15vw;
+    position: relative;
+    display: flex;
+    color: #484848;
+}
+
+.search{
+    width: 25vw;
+    border: 0.2vw solid #484848; /*pour la couleur du bord de la barre*/
+    height: 2.15vw; /*hauteur de la barre de recherche*/
+    outline: none;
+    color: #484848;
+    border-radius: 5px 0 0 5px;
+}
+
+.search:focus{ /*animation pour le cadre autour de rechercher*/
+    color: #dd3333;
+    box-shadow: 0 0 5px; /*Quand on clique ca fait une ombre autour du cadre de recherche*/
+}
+
+.search-btn{ /*les parametres du bouton loupe*/
+    width: 4vw; /*longueur de la loupe*/
+    height: 2.15vw; /*hauteur de la loupe*/
+    border: 0.1vw solid #484848;
+    background: #484848;
+    text-align: center;
+    color: #e4d8c7;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1.6vw; /*taille de la loupe*/
+}
+
+input[type="text"]
+{
+    font-size:1vw;
+}
+
+
+.profil_capteur{
+    background:#f5f5f5;
+    color:#555;
+    border-radius:0.6vw;
+    border:0.2vw solid #ccc;
+    font-family: "Roboto", sans-serif;
+    width: 4vw;
+    height: 4vw;
+    margin: -50vw 1vw 6.5vw 3vw;
+
+}
+
+.modal{
+    height: 10vw;
+    width: 30%;
+    background: white;
+    border: 1vw solid grey;
+    border-radius: 0.15vw;
+    position: absolute;
+    top: -500vw;
+    text-align: left;
+    padding: 0.3vw;
+    font-family: "Roboto", sans-serif;
+}
+
+
+#modal1{
+    left: 16vw;
+}
+
+#modal2{
+    left: 24vw;
+}
+#modal3{
+    left: 31vw;
+}
+#modal4{
+    left: 40vw;
+}
+#modal5{
+    left: 48vw;
+}
+#modal6{
+    left: 56vw;
+}
+
+#list_capteur{
+    height: 15vw;
+    margin: -12vw 5vw 1.3vw 15vw;
+}
+
+.battery{
+    width: 2vw;
+}
+
+
+p2{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5vw;
+    position: initial;
+}
+
+button:hover{
+    color: #DD3333;
+    font-weight: bolder;
+    opacity: 90%;
+}
+
+.close{
+    background:#dd3333;
+    color:#fff;
+    width:3.5vw;
+    border-radius:2px;
+    border:none;
+    position: absolute;
+    right: 0.3vw;
+    top: 0.3vw;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2vw;
+
+}

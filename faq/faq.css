@@ -1,0 +1,318 @@
+/* Corps principal */
+
+
+.entête {
+    font-size: 18px;
+    margin: 5px;
+    padding: 5px;
+    font-family: "Roboto";
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+    border-radius: 15px;
+    cursor: pointer;
+    top: 1px;
+}
+.Talk{
+    padding: 2px;
+    color: black;
+}
+body{
+    background-color: #333;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Roboto";
+}
+
+
+
+/* Questions Techniques */
+
+.categorie-QT {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 25%;
+    height: auto;
+    border: solid #000000 1;
+    border-radius: 10px;
+    background-color: #E4D8C7;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    transition: 0.1s ease-in;
+}
+.categorie-QT:hover{
+    border: solid #000000 3px;
+    background-color: #DD3333;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    color: black;
+}
+
+/* Info Capteurs */
+
+.categorie-InfoCap {
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    width: 25%;
+    height: auto;
+    border: solid #000000 1;
+    border-radius: 10px;
+    background-color: #E4D8C7;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    transition: 0.1s ease-in;
+}
+
+
+.categorie-InfoCap:hover {
+    border: solid #000000 3px;
+    background-color:#DD3333;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    color: black;
+}
+
+/* Problèmes Capteurs */
+
+.categorie-ProbCap {
+    right: 5%;
+    top: 20%;
+    position: absolute;
+    width: 25%;
+    height: auto;
+    border: solid #000000 1;
+    border-radius: 10px;
+    background-color: #E4D8C7;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    transition: 0.1s ease-in;
+}
+h2.Titre {
+    margin-top: 2px;
+}
+
+.categorie-ProbCap:hover {
+    border: solid #000000 3px;
+    background-color:#DD3333;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    color: black;
+}
+
+/* Questions Fréquentes */
+
+.categorie-QF {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 25%;
+    height: auto;
+    border: solid #000000 1;
+    border-radius: 10px;
+    background-color: #E4D8C7;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    transition: 0.1s ease-in;
+}
+
+.categorie-QF:hover {
+    border: solid #000000 3px;
+    background-color:#DD3333;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    color: black;
+}
+
+/* Ajouter Question */
+
+.categorie-AddF {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    width: 25%;
+    height: auto;
+    border: solid #000000 1;
+    border-radius: 10px;
+    background-color: #E4D8C7;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    transition: 0.1s ease-in;
+}
+.categorie-AddF:hover {
+    border: solid #000000 3px;
+    background-color: #DD3333;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    color: black;
+
+}
+
+/* Popup */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    font-family: "Roboto";
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.content {
+    font-family: "Roboto";
+    font-size: 12px;
+}
+
+/* Footer à ajouter */
+/* Zone media query */
+
+@media (max-aspect-ratio:3/2) {
+
+    .entête {
+        margin: 0%;
+        padding: 1vw;
+        font-size: 2vw;
+        background-color: #333;
+        border-radius: 15px;
+        width: 22vw;
+        height: 20vh;
+    }
+    .Talk{
+        font-size: 2vw;
+        padding-top: 1vh;
+    }
+
+    /* Questions Techniques */
+    .categorie-QT {
+        width: 25vw;
+        height: 25vh;
+    }
+
+    /* Info Capteurs */
+    .categorie-InfoCap {
+        width: 25vw;
+        height: 25vh;
+    }
+
+    /* Problèmes Capteurs */
+
+    .categorie-ProbCap {
+        width: 25vw;
+        height: 25vh;
+    }
+
+    /* Questions Fréquentes */
+
+    .categorie-QF {
+        width: 25vw;
+        height: 25vh;
+    }
+
+    /* Ajouter Question */
+
+    .categorie-AddF {
+        width: 25vw;
+        height: 25vh;
+    }
+}
+
+
+.CGU{
+    margin: 2vw 2vw 0 1vw;
+    position: absolute;
+    overflow: hidden visible;
+}
+.link_CGU{
+    margin-bottom: 6vw;
+    margin-left: 4.5vw;
+}
+#popup_CGU_haut {
+    text-decoration: none;
+}
+
+
+.p_cgu {
+    font-family: "Roboto", sans-serif;
+    font-weight:initial;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    overflow: scroll;
+    opacity: 1;
+}
+
+.popup {
+    font-family: "Roboto", sans-serif;
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}

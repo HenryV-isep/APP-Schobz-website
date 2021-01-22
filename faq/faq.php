@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>A propos de nous</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="faq.css">
+    <link rel="stylesheet" type="text/css" href="../footer_header/footer_header.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link rel="stylesheet" href="a_propos_de_nous.css">
-    <link rel="stylesheet" href="../footer_header/footer_header.css">
-    <script src="a_propos_de_nous.js"></script>
+    <title>FAQ</title>
 </head>
 <body>
 
-<!--HEADER-->
+<!-- Header -->
 <div class="topbar">
 
     <span class="menuduhautpartiegauche"> <!-- span c'est pour aligner les liens -->
         <a href="../accueil/accueil.php">Accueil</a>
-        <a href="../inscription_connexion/page_inscription.php">Mon compte</a>
+        <a href="../profil_utilisateur/profil_utilisateur_apercu_du_compte.php">Mon compte</a>
         <a href="../a_propos_de_nous/a_propos_de_nous.php">A propos de nous</a>
     </span>
     <span>
@@ -24,100 +23,120 @@
     </span>
     <span class="menuduhautpartiedroite"> <!-- span c'est pour aligner les liens -->
         <a class="link_CGU" href=#popup_CGU>Mentions légales et CGU</a>
-        <a href="../faq/faq.php">F.A.Q</a>
+        <a href="faq.php">F.A.Q</a>
     </span>
 </div>
 
 
-<!--A PROPOS DE NOUS-->
-<div class="page">
-    <div id="photo">
-        <h1>PRESENTATION DE L'EQUIPE</h1>
-        <div id="images">
-            <button class="profil" onclick="openModal1()">
-                <img class="tete" src="../image/utilisateur.png"/>
-                <p2>Numéro 1</p2>
-
-            </button>
-            <button class="profil" onclick="openModal2()">
-                <img class="tete" src="../image/utilisateur.png" />
-                <p2>Numéro 2</p2>
-
-            </button>
-            <button class="profil" onclick="openModal3()">
-                <img class="tete" src="../image/utilisateur.png" >
-                <p2>Numéro 3</p2>
-
-            </button>
-            <button class="profil" onclick="openModal4()">
-                <img class="tete" src="../image/utilisateur.png" />
-                <p2>Numéro 4</p2>
-
-            </button>
-            <button class="profil" onclick="openModal5()">
-                <img class="tete" src="../image/utilisateur.png" />
-                <p2>Numéro 5</p2>
-
-            </button>
-            <button class="profil" onclick="openModal6()">
-                <img class="tete" src="../image/utilisateur.png"/>
-                <p2>Numéro 6</p2>
-
-            </button>
-        </div>
-    </div>
-
-    <div id="texte">
-
-        <h1 id="titre">
-            A PROPOS DE NOUS
-        </h1>
-
-        <h3>
-            L'auto-école ****
-        </h3>
-
-        <p id="pa">
-            Texte de présentation de l'auto-école/
+<!-- Corps principal -->
+<div class="regroupement">
+    <div class="categorie-QT">
+        <a class="entête" href="#popup_QT">
+            Questions techniques
+        </a>
+        <p class="Talk">
+            Pour toutes questions concernant le fonctionnement du sites, de la lecture des résultats ou du relevé des mesures.
         </p>
-
+    </div>
+    <div class="categorie-InfoCap">
+        <a class="entête" href="#popup_InfoCap">
+            Information capteur
+        </a>
+        <p class="Talk">
+            Pour toutes questions sur le fonctionnement des appareils de mesures.
+        </p>
+    </div>
+    <div class="categorie-ProbCap">
+        <a class="entête" href="#popup_ProbCap">
+            Problème capteur
+        </a>
+        <p class="Talk">
+            Pour tout endommagement du système, veuillez le signaler à votre auto-école.
+        </p>
+    </div>
+    <div class="categorie-QF">
+        <a class="entête" href="#popup_QF">
+            Questions fréquentes
+        </a>
+        <p class="Talk">
+            Pour toutes questions en générales concernant le fonctionnement du service.
+        </p>
+    </div>
+    <div class="categorie-AddF">
+        <a class="entête" href="#popup_AddF">
+            Ajouter une question
+        </a>
+        <p class="Talk">
+            Pour tout autre demandes.
+        </p>
     </div>
 </div>
 
-<div class="modal" id="modal1">
-    <h2>Numéro 1</h2>
-    <p1>Texte numéro 1</p1>
-    <button class="close" onclick="closeModal1()">close</button>
+
+<!-- Popup -->
+<div id="popup_QT" class="overlay">
+    <div class="popup">
+        <h2>
+            Questions techniques
+        </h2>
+        <a class="close" href="#">&times;</a>
+        <span class="content">
+                    <h3>Comment lire les résultats?</h3>
+                    <p>Il est possible de lire les résultats via le profile, rubrique Mes Résultats. Vous pourrez ainsi suivre votre progression.</p>
+                    <h3>Comment suivre le relevé de mesures?</h3>
+                    <p>Vous avez accès aux mesures depuis votre profile. Votre suivi peut alors se faire directement par des graphiques.</p>
+                </span>
+    </div>
 </div>
 
-<div class="modal" id="modal2">
-    <h2>Numéro 2</h2>
-    <p1>Texte numéro 2</p1>
-    <button class="close" onclick="closeModal2()">close</button>
+<div id="popup_InfoCap" class="overlay">
+    <div class="popup">
+        <h2>
+            Informations sur les capteurs
+        </h2>
+        <a class="close" href="#">&times;</a>
+        <span class="content">
+                    <h3>Que font les appareils de mesures</h3>
+                    <h3>À quoi servent-ils?</h3>
+                    <h3>Comment fonctionnent-ils?</h3>
+                </span>
+    </div>
 </div>
 
-<div class="modal" id="modal3">
-    <h2>Numéro 3</h2>
-    <p1>Texte numéro 3</p1>
-    <button class="close" onclick="closeModal3()">close</button>
+<div id="popup_ProbCap" class="overlay">
+    <div class="popup">
+        <h2>
+            Problèmes avec les capteurs
+        </h2>
+        <a class="close" href="#">&times;</a>
+        <span class="content">
+                    <h3>Que faire lorsqu'un appareil ne s'active pas?</h3>
+                </span>
+    </div>
 </div>
 
-<div class="modal" id="modal4">
-    <h2>Numéro 4</h2>
-    <p1>Texte numéro 4</p1>
-    <button class="close" onclick="closeModal4()">close</button>
+<div id="popup_QF" class="overlay">
+    <div class="popup">
+        <h2>
+            Questions fréquentes
+        </h2>
+        <a class="close" href="#">&times;</a>
+        <span class="content">
+                    Pour toutes questions en générales à propos du fonctionnement du service.
+                    <h3>Comment accéder à son profil?</h3>
+                    <p>Le profil est accessible via le bouton "Profil" situé en haut de page.</p>
+                </span>
+    </div>
 </div>
 
-<div class="modal" id="modal5">
-    <h2>Numéro 5</h2>
-    <p1>Texte numéro 5</p1>
-    <button class="close" onclick="closeModal5()">close</button>
-</div>
-
-<div class="modal" id="modal6">
-    <h2>Numéro 6</h2>
-    <p1>Texte numéro 6</p1>
-    <button class="close" onclick="closeModal6()">close</button>
+<div id="popup_AddF" class="overlay">
+    <div class="popup">
+        <h2>Ajouter une question</h2>
+        <a class="close" href="#">&times;</a>
+        <span class="content">
+                    <h3>Pour tout autre demande, merci de vous référer à la rubrique Nous Contacter en bas de page pour y envoyer un message.</h3>
+                </span>
+    </div>
 </div>
 
 
@@ -125,7 +144,7 @@
 <div id="popup_CGU" class="overlay">
     <div class="popup">
         <h2>Mentions légales et CGU</h2>
-        <a class="fermer" href="#">&times;</a>
+        <a class="close" href="#">&times;</a>
         <span class="content">
                     <p class="p_cgu">Téléphone : 0781066685<br/><br/>
                     <b>Edition du site : </b><br/><br/>
@@ -182,22 +201,28 @@
                         Suivant la loi informatique et Libertés en date du 6 janvier 1978, articles 39 et 40, l’Utilisateur dispose du droit d'accéder, de rectifier, de supprimer ses données personnelles.
                      </b><br/><br/>
                     </p>
-        </span>
+                </span>
     </div>
 </div>
 
-<!--FOOTER-->
+
+
+<!--Footer-->
+
 <div class="footer">
-    <span class="menudubaspartiegauche">
-        <a href="https://twitter.com"> <img id="twitter" src="../image/twitter.png" /></a>
-        <a href="https://www.instagram.com"> <img id="instagram" src="../image/instagram.png"/></a>
-        <a href="https://www.facebook.com"><img id="facebook" src="../image/facebook.png" /></a>
-        <a href="https://www.linkedin.com"><img id="linkedin" src="../image/linkedin.png" /></a>
-    </span>
+
+            <span class="menudubaspartiegauche">
+                <a href="https://twitter.com"> <img id="twitter" src="../image/twitter.png"></a>
+                <a href="https://www.instagram.com"> <img id="instagram" src="../image/instagram.png"></a>
+                <a href="https://www.facebook.com"><img id="facebook" src="../image/facebook.png"></a>
+                <a href="https://www.linkedin.com"><img id="linkedin" src="../image/linkedin.png"></a>
+            </span>
+
+
     <form class="menudubaspartiecentre">
-        <span class="Nous_contacter_titre">
-        Nous contacter
-        </span>
+                <span class="Nous_contacter_titre">
+                    Nous contacter
+                </span>
         <div class="Nous_contacter_collect" data-validate="Merci de renseigner votre nom et prénom">
             <input class="Nous_contacter_imput" type="text" name="name" placeholder="Nom et Prénom">
             <span class="focus-Nous_contacter"></span>
@@ -206,29 +231,42 @@
             <input class="Nous_contacter_imput" type="text" name="email" placeholder="E-mail" >
             <span class="focus-Nous_contacter"></span>
             <span></span></div>
-        <div class="Nous_contacter_collect_imput_textarea" data-validate="Merci de renseigner votre message.">
+        <div class="<Nous_contacter_collect>" data-validate="Merci de renseigner votre message.">
             <textarea class="Nous_contacter_imput_textarea" name="message" placeholder="Votre message"></textarea>
             <span class="focus-Nous_contacter"></span>
         </div>
-        <input type="submit" value="Envoyer"
-               class="Nous_contacter_bouton" style="color: #484848"/>
+        <div class="BLoc_Bouton">
+            <button class="Nous_contacter_bouton">
+                        <span>
+                            <i aria-hidden="true"></i>
+                                Envoyer
+                        </span>
+            </button>
+        </div>
     </form>
+
     <div class="adresse_premierepartie">
         <a href="">10 rue de vanves, 92130</a>
     </div>
+
     <div class="adresse_deuxiemepartie">
         <a href="">Issy-Les-Moulineaux, France</a>
     </div>
+
     <div class="horaire">
         <a href="">8h30-12h, 13h-18h</a>
     </div>
+
     <div class="telephone">
         <a href="">07 81 06 65 85</a>
     </div>
-    <img id="maison" src="../image/maison.png"/>
-    <img id="horloge" src="../image/horloge.png" />
-    <img id="telephone" src="../image/telephone.png" />
+
+    <img id="maison" src="../image/maison.png">
+    <img id="horloge" src="../image/horloge.png">
+    <img id="telephone" src="../image/telephone.png">
+
 </div>
+
 
 </body>
 </html>

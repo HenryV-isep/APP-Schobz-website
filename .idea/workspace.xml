@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cc3aed66-4c97-439d-add0-8809482429b3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1j67Fvc8w2pYclJdxtJbIn0n7Ih" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Profil utilisateur" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MAMP\htdocs\Schobz\Profil utilisateur" />
+      <recent name="C:\MAMP\htdocs\Profil\A propos de nous" />
+      <recent name="C:\Users\julie\PhpstormProjects\untitled" />
+      <recent name="C:\Users\julie\PhpstormProjects" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MAMP\htdocs\Schobz\Inscrition_Connexion" />
+      <recent name="C:\MAMP\htdocs\Schobz\Image" />
+      <recent name="C:\MAMP\htdocs\Schobz\Footer-header" />
+      <recent name="C:\MAMP\htdocs\Profil\Profil gestionnaire" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc3aed66-4c97-439d-add0-8809482429b3" name="Default Changelist" comment="" />
+      <created>1603112591118</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603112591118</updated>
+      <workItem from="1603112592511" duration="3100000" />
+      <workItem from="1603176732495" duration="10148000" />
+      <workItem from="1603352896078" duration="13402000" />
+      <workItem from="1604929269134" duration="5215000" />
+      <workItem from="1604999567786" duration="5892000" />
+      <workItem from="1605271342093" duration="6767000" />
+      <workItem from="1605883402671" duration="1376000" />
+      <workItem from="1606147960817" duration="9033000" />
+      <workItem from="1606208421578" duration="14612000" />
+      <workItem from="1606236567196" duration="246000" />
+      <workItem from="1606669347005" duration="16318000" />
+      <workItem from="1607360522500" duration="10662000" />
+      <workItem from="1607524509905" duration="7460000" />
+      <workItem from="1607594621012" duration="26104000" />
+      <workItem from="1607948163676" duration="5828000" />
+      <workItem from="1607954920077" duration="5636000" />
+      <workItem from="1608020427969" duration="8692000" />
+      <workItem from="1608127529155" duration="13904000" />
+      <workItem from="1608195131588" duration="23940000" />
+      <workItem from="1608278678220" duration="4759000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="267" y="19" key="#Inspections" timestamp="1608218649168">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1608218649168" />
+    <state x="416" y="142" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603112798565">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="416" y="142" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1603112798565" />
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608219106216">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1608219106216" />
+    <state x="679" y="100" key="FileChooserDialogImpl" timestamp="1603178541416">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="679" y="100" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603178541416" />
+    <state x="671" y="310" key="NewPhpFileDialog" timestamp="1607419154704">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="671" y="310" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1607419154704" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1607955341869">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1607955341869" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1608021609165">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1608021609165" />
+  </component>
+</project>

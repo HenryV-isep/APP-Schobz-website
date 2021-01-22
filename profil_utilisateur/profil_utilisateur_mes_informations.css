@@ -1,0 +1,77 @@
+/* MES INFORMATIONS */
+
+.titreicon{  /*Placement de l'icon Mes informations*/
+    width: 3.5vw;
+    display: block;
+    float: left;
+    margin-left: -2.2vw;
+    margin-top: -3.8vw;
+}
+
+h2{
+    margin-top: -3.5vw;
+    margin-left: 2vw;
+}
+
+
+.presentation_information{  /*Réglage général du block */
+    display: block;
+    position: absolute;
+    top: 6vw;
+    right: 2vw;
+    left: 20vw;
+    height: 75vw;
+    background-color: #E4D8C7;
+    padding: 4vw;
+    color: #484848;
+
+}
+
+
+.form_information{  /*Reglage du form globale*/
+    position: absolute;
+    top: 13vw;
+    left: 23vw;
+    font-weight: bold;
+    color: #484848;
+}
+
+
+.remplissage_text{   /*Reglage des zones à remplir*/
+    border: 0;
+    border-radius: 0.5vw;
+    padding: 0.2vw;
+    width: 16vw;
+    font-size: small;
+}
+
+.remplissage_other{
+    border: 0;
+    border-radius: 0.5vw;
+    padding: 0.5vw;
+    width: 16vw;
+    font-size: x-small;
+}
+
+.remplissage:hover {  /*Changement de couleur lorsque la souris passe dans une des zones à remplir*/
+    background-color: #DD3333;
+}
+
+
+.genre{   /*Reglage pour la case genre car ne s'aligne pas bien avec les autres sinon*/
+    border: 0;
+    border-radius: 0.5vw;
+    padding: 0.2vw;
+    width: 16vw;
+    font-weight: inherit;
+}
+
+
+.form_information input[type=submit]{  /*Reglage pour le bouton sauvegarder*/
+    border: 0;
+    border-radius: 0.5vw;
+    font-weight: bold;
+    padding: 0.2vw;
+    width: 13vw;
+    background-color: white;
+}

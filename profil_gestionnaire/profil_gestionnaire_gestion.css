@@ -1,0 +1,85 @@
+/* GESTION */
+
+
+.titreicon{  /*Placement de l'icon Gestion*/
+    width: 3.5vw;
+    display: block;
+    float: left;
+    margin-left: -2.2vw;
+    margin-top: -3.8vw;
+}
+
+h2{
+    margin-top: -3.5vw;
+    margin-left: 2vw;
+}
+
+.presentation_gestion{  /*Réglage général du block */
+    display: block;
+    position: absolute;
+    top: 6vw;
+    right: 2vw;
+    left: 20vw;
+    height: 30.9vw;
+    background-color: #E4D8C7;
+    padding: 4vw;
+    color: #484848;
+}
+
+
+.form_information{  /*Reglage du form globale*/
+    position: absolute;
+    top: 13vw;
+    left: 23vw;
+    font-weight: bold;
+    color: #484848;
+}
+
+
+.form_information input[type=submit]{  /*Reglage pour les boutons*/
+    border: 0;
+    border-radius: 0.5vw;
+    font-weight: bold;
+    padding: 0.2vw;
+    width: 13vw;
+    margin-left: 2vw;
+    background-color: white;
+}
+
+.form_information input[type=submit] :hover{
+    background-color: #dd3333;
+}
+.bouton:hover {  /*Changement de couleur lorsque la souris passe dans une des zones à remplir*/
+    background-color: #dd3333;
+}
+
+.lien_gestion{
+    text-decoration: none;
+    color: #484848;
+}
+
+.naviguation_gestion{
+    text-decoration: none;
+    color: #484848;
+    margin-top: -4vw;
+    margin-left: -6vw;
+}
+
+.naviguation_gestion ul li:nth-child(1){
+    margin-bottom: 1vw;
+    margin-top: 6.5vw;
+}
+
+.naviguation_gestion ul li:nth-child(1):hover{
+    color: #484848;
+}
+.naviguation_gestion ul li:nth-child(2){
+    margin-bottom: 1vw;
+}
+.naviguation_gestion ul li:nth-child(3){
+    margin-bottom: 1vw;
+}
+.naviguation_gestion ul li:nth-child(4){
+    margin-bottom: 1vw;
+}
+
