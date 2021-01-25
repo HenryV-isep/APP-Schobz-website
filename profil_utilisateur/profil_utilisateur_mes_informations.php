@@ -158,8 +158,9 @@ $bdd = new PDO('mysql:host=localhost;dbname=schobz_data_demo', 'root', 'root'); 
 
         <br/>
         <br/>
+        <!--
         <label for="photo">Ajouter une photo :</label><br/>
-        <input type="file" name="photo" id="photo"/>
+        <input type="file" name="photo" id="photo"/> -->
 
         <br/>
         <br/>

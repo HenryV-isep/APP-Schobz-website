@@ -147,7 +147,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=schobz_data_demo', 'root', 'root'); 
             </label>
 
             <label>
-                <input type="checkbox" class="check-box1" required="required"/> Remember Password
+                <input type="checkbox" class="check-box1"/> Sauvegarder le mot de passe
             </label>
 
             <button type="submit" name ="formconnexion" class="connex1">Connexion</button>
@@ -201,7 +201,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=schobz_data_demo', 'root', 'root'); 
                 <input name="confirm_password" class="identif2" type="password" placeholder="Confirmez votre mot de passe" required="required"/>
             </label>
             <label>
-                <input name="numero_de_permis" class="identif2" type="text" placeholder="Numéro de permis" required="required"/>
+                <input name="numero_de_permis" class="identif2" type="text" placeholder="Numéro de permis"/>
             </label>
             <label>
                 <input name="numero_auto_ecole" class="identif2" type="number" placeholder="Numéro auto école" required="required"/>

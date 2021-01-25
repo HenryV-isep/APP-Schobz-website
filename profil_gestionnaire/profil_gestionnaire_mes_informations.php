@@ -115,9 +115,9 @@
                class="remplissage_date" />
 
         <br/>
-        <br/>
+        <br/> <!--
         <label for="photo">Ajouter une photo :</label><br/>
-        <input type="file" name="photo" id="photo"/>
+        <input type="file" name="photo" id="photo"/> -->
 
         <br/>
         <br/>
