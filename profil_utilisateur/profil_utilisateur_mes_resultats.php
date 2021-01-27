@@ -2,16 +2,16 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <link rel="stylesheet" href="../footer_header/footer_header.css">
-    <link rel="stylesheet" href="profil_utilisateur_apercu_du_compte.css">
-    <link rel="stylesheet" type="text/css"  href="profil_utilisateur_mes_resultats.css">
-    <link rel="stylesheet" href="../mentions_legales_et_cgu/mentions_legales_et_cgu.css">
+    <link rel="stylesheet" href="../profil_utilisateur/profil_utilisateur_apercu_du_compte.css">
+    <link rel="stylesheet" href="../profil_utilisateur/profil_utilisateur_mes_informations.css">
+    <link rel="stylesheet" href="../profil_utilisateur/profil_utilisateur_mes_resultats.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
-    <title>Profil utilisateur/Mes resultats</title>
+    <title>Profil gestionnaire/Les resultats</title>
 
 </head>
 <body>
@@ -21,42 +21,104 @@
 <div class="topbar">
 
     <span class="menuduhautpartiegauche"> <!-- span c'est pour aligner les liens -->
-        <a href="../accueil/accueil.php">Accueil</a>
-        <a href="../inscription_connexion/page_inscription.php">Mon compte</a>
-        <a href="../a_propos_de_nous/a_propos_de_nous.php">A propos de nous</a>
-    </span>
-    <span>
-        <a class="middle"> DriverPsychotechniqueTest.fr</a>
+        <a href="">Accueil</a>
+        <a href="">Mon compte</a>
+        <a href="">A propos de nous</a>
     </span>
     <span class="menuduhautpartiedroite"> <!-- span c'est pour aligner les liens -->
-        <a class="link_CGU" href=#popup_CGU>Mentions légales et CGU</a>
-        <a href="../faq/faq.php">F.A.Q</a>
+        <a href="">Recherche avancée</a>
+        <a href="">F.A.Q</a>
     </span>
 </div>
 
+
+<div class="container">
+    <div class="search-box">
+        <input type="text" class="search" placeholder="Rechercher" style="color: #615858">  <!-- style pour le couleur dans le input de la barre de recherche -->
+        <button type="submit" class="search-btn">
+            <i class="fa fa-search"></i>
+        </button>
+    </div>
+</div>
 
 <!--BARRE DE NAVIGATION-->
 
 <nav>
     <ul>
-        <li> Bonjour <br/> </li>
-        <li><a class="lien" href="profil_utilisateur_apercu_du_compte.php"><img class="image" src="../image/user.png" alt="">Aperçu du compte</a></li>
-        <li><a class="lien" href="profil_utilisateur_mes_informations.php"><img class="image" src="../image/information.png" alt=""> Mes informations</a></li>
-        <li><a class="lien" href="profil_utilisateur_mes_resultats.php"><img class="image" src="../image/result.png" alt="">Mes résultats </a></li>
-        <li><a class="lien" href="profil_utilisateur_test.php"><img class="image" src="../image/play.png" alt="">Test</a></li>
-        <li><a class="lien" href="../accueil/accueil.php"><img class="image" src="../image/deconnexion.png" alt="">Déconnexion</a></li>
+        <li> Bonjour, <br/> Juliette Sebillotte </li>
+        <li><a class="lien" href="Profil%20utilisateur%20Apercu%20du%20compte.html"><img class="image" src="../Image/user.png" alt="">Aperçu du compte</a></li>
+        <li><a class="lien" href="Profil%20utilisateur%20Mes%20informations.html"><img class="image" src="../Image/information.png" alt=""> Mes informations</a></li>
+        <li><a class="lien" href="Profil%20utilisateur%20Mes%20resultats.html"><img class="image" src="../Image/result.png" alt="">Mes résultats </a></li>
+        <li><a class="lien" href="Profil%20utilisateur%20Test.html"><img class="image" src="../Image/play.png" alt="">Test</a></li>
+        <li><a class="lien" href="Deconnexion.html"><img class="image" src="../Image/deconnexion.png" alt="">Déconnexion</a></li>
     </ul>
 </nav>
 
 <!--LES RESULTATS-->
 
+
+<!-- Partie historique des résultats-->
+
+
+<button onclick="historique()" style="position: absolute; left: 70%; top: 30%;z-index: 10;"> Historique des résultats </button>
 <div class="presentation_resultat">
-    <h1><img class="titreicon" src="../image/result.png" alt=""></h1>
-    <h2>MES RESULTATS</h2>
+    <h1><img class="titreicon" src="../Image/result.png" alt=""></h1>
+    <h2>LES RESULTATS</h2>
     <p> Vous pouvez consulter vos résultats.</p>
+    <div class="containtresults">
+    <?php
+                //tu fais sa nomalement sur un autre page php, faut arreté du mettre tout le code sur la même page
+                $dBHost = "localhost";
+                $dBUser = "root";
+                $dBPassword = "root";
+                $dBDatabase = "schobz_data";
+                $port = "3306";
+                $conn = mysqli_connect($dBHost, $dBUser, $dBPassword, $dBDatabase, $port);
+                if (!$conn) {
+                die("Échec de la connexion:" . mysqli_connect_error());
+                }
+                function table() {
+                    global $conn;
+                    $affichage = '';
+                    $sql = "SELECT periode, nom_du_test, mesure_de_donnee FROM personne JOIN test ON `test`.`cle_etrangere_personne`=`personne`.`id_Personne` JOIN resultats ON `resultats`.`cle_etrangere_Test` = `test`.`id_test` WHERE nom='Cassoulet' ORDER BY periode DESC"; #Normalement, ça fera une liste
+                    $resultData = mysqli_query($conn,$sql);
+                    while($row = mysqli_fetch_assoc($resultData)) {
+                        $affichage = '
+                            <tr>
+                                <td>'.$row['periode'].'</td>
+                                <td>'.$row['nom_du_test'].'</td>
+                                <td>'.$row['mesure_de_donnee'].'</td>
+                            </tr>';
+                    }
+                    return $affichage;
+                }
+
+                $sql = "SELECT mesure_de_donnee FROM `resultats` JOIN test ON `resultats`.`cle_etrangere_Test` = `test`.`id_test` JOIN `personne` ON `test`.`cle_etrangere_personne`=`personne`.`id_Personne` WHERE nom='Cassoulet'";
+                $resultData = mysqli_query($conn,$sql);
+                $row = mysqli_fetch_assoc($resultData);
+                if (isset($row)) {
+                    $affichage = table();
+                    echo '
+                        <table id="resulthistory">
+                            <thead>
+                                <tr>
+                                    <th>Nom du test</th>
+                                    <th>Date</th>
+                                    <th>Résultats</th>
+                                </tr>
+                            <thead>
+                            <tbody>
+                                '.$affichage.'
+                            </tbody>
+                        </table>';
+                } else {
+                        echo 'Il semblerait que vous n\'avez pas passé de test ';
+                }
+            ?>
+    </div>
 </div>
 
-<div class="chart">
+<div class="chart" id="graph">
     <div class="row">
         <div class="chart1">
             <canvas id="myChart" width="200" height="150"></canvas>
@@ -74,77 +136,12 @@
         </div>
     </div>
 </div>
-<script src="profil_utilisateur_mes_resultats.js"></script>
+<script src="../profil_utilisateur/profil_utilisateur_mes_resultats.js"></script>
 
-
-<!--POPUP MENTIONS LEGALES ET CGU-->
-<div id="popup_CGU" class="overlay">
-    <div class="popup">
-        <h2>Mentions légales et CGU</h2>
-        <a class="close" href="#">&times;</a>
-        <span class="content">
-                    <p class="p_cgu">Téléphone : 0781066685<br/><br/>
-                    <b>Edition du site : </b><br/><br/>
-                    Le site ‘driverpsychotechniquetest.fr’ est édité par la société SCHOBZ Corporation. Capital social de 60 euros, dont le siège social est situé 10 rue de vanves, 92130 Issy-les-moulineaux <br/><br/>
-                    <b>Responsable de rédaction :</b><br/><br/>
-                    Schobz Corporation <br/><br/>
-
-                    <b>Hébergeur : </b><br/><br/>
-                    Le site ‘DriverPsychotechniqueTest.fr’ est hébergé par la société ISEP Paris <br/>
-                    Adresse : 28 rue Notre Dame des Champs, 75006 Paris<br/><br/>
-
-                    <b>L’utilisation des données personnelles : </b><br/><br/>
-                    Aucune information personnelle ne sera collectée à votre insu. les informations que vous nous communiquez lors de l’inscription, renseignement, ou d’une demande de devis transmise par courrier, téléphone, e-mail ou par formulaire sont uniquement destinées à un traitement administratif et commercial de votre demande par la société ISEP Paris.
-                    Conformément à la loi “ Informatique et Libertés”  n 78-17 du 6 janvier 1978, vous disposez d’un droit d'accès, de rectification et d’opposition aux données personnelles vous concernant.
-                    Afin de l’exercer, il suffit de nous en faire la demande par écrit à la coordonnée suivante : <br/>
-                    ( mettre une adresse mail ou adresse postale ) <br/><br/>
-
-                    <b>Droit d’auteur : </b><br/><br/>
-                    L’ensemble du contenu du présent site Internet, est la propriété de la société ISEP Paris, il est protégé par les lois en vigueur de la législation française sur la propriété intellectuelle.<br/><br/>
-                    Aucun élément de ce site ne peut être copié, reproduit, détourné ou dénaturé, sur quelque support que ce soit, sans constituer un acte de contrefaçon au sens des articles L 335-2 et suivants du code de la propriété intellectuelle.<br/><br/>
-
-                     <b>Article 1 : Objet</b><br/><br/>
-                        <b style="font-weight: lighter">Les présentes CGU ou Conditions Générales d’Utilisation encadrent juridiquement l’utilisateur des services du site Drivepsychotechniquetest ( ci-après dénommé “le site”).
-                        Constituant le contrat entre la société ISEP Paris, l’Utilisateur, l'accès à cette plateforme signifie l’acceptation des présentes CGU.
-                     </b><br/><br/>
-                     <b>Article 2 : Mentions légales</b><br/><br/>
-                        <b style="font-weight: lighter">L'édition du site Drivepsychotechniquetest est assurée par la société SCHOBZ Corporation, dont le siège social est localisée au 10 rue de vanves 92130 Issy les Moulineaux, France.
-                        L'hébergeur du site Drivepsychotechniquetest.fr est la société ISEP Paris, au 28 rue Notre Dame des Champs, 75006 Paris, France.
-                     </b><br/><br/>
-                     <b>Article 3 : Accès au site</b><br/><br/>
-                        <b style="font-weight: lighter">Le site Divepsychotechniquetest.fr permet aux utilisateurs d'accéder aux services suivants :
-                        Effectuer des tests psychotechniques.
-                        Consulter les résultats des tests.
-                        Le site est accessible depuis n’importe quelle plateforme par tout utilisateur inscrit dans une auto-école et disposant d’un accès à Internet. Tous les frais nécessaires pour l'accès aux services sont à la charge de l’utilisateur ou de l'auto-école ou ce dernier est inscrit.
-                        L'accès aux services dédiés aux membres s’effectue à l’aide d’un identifiant et d’un mot de passe créés au préalable dans une auto-école.
-                        L'éditeur s’efforce de permettre l'accès au site 24 heures sur 24, 7 jours sur 7, sauf en cas de force majeure ou d’un événement hors du contrôle de celui-ci, et sous réserve des éventuelles pannes et interventions de maintenance nécessaires au bon fonctionnement du site et des services proposés.
-                        Il n’est prévu aucune assistance technique vis-à-vis de l’utilisateur que ce soit par des moyens électroniques ou téléphoniques.
-                        Par ailleurs, l'accès au site peut être interrompu ou suspendu pour des raisons de maintenance et cela sans préavis.
-                     </b><br/><br/>
-                     <b>Article 4 : Liens hypertextes</b><br/><br/>
-                        <b style="font-weight: lighter">Le site peut contenir des liens hypertextes vers d’autres sites présents sur le réseau Internet.
-                     </b><br/><br/>
-                     <b>Article 5 : Responsabilité</b><br/><br/>
-                        <b style="font-weight: lighter">Les informations et/ou documents diffusés sur le site par l’EDITEUR proviennent majoritairement de sources fiables, le site se réserve la faculté d’une non-garantie de la fiabilité des sources.
-                        Toutefois, il est fortement conseillé de vérifier l’exactitude des informations et/ou documents présents sur le site.
-                        Il faut savoir que, les informations et/ou documents mis à disposition sur le site sont susceptibles d'être modifiés à tout moment.
-                        L’utilisateur est le seul responsable de la manière avec laquelle il va utiliser les informations et/ou documents disponibles sur le site, sans que l’EDITEUR puisse être recherché à ce titre, et sans recours contre ce dernier.
-                     </b><br/><br/>
-                     <b>Article 6 : Propriete intellectuelle</b><br/><br/>
-                        <b style="font-weight: lighter">Les marques, logos ainsi que le contenu du site sont protégés par le code de la propriété intellectuelle et par le droit d’auteur.</b><br/><br/>
-                        <b>Article 7:  Collecte des données</b><br/><br/>
-                        <b style="font-weight: lighter">Pour la création du compte de l’utilisateur ou du gestionnaire, la collecte des informations au moment de l’inscription sur le site est nécessaire et obligatoire pour la réalisation des tests.
-                        Conformément à la loi n 78-17 du 6 janvier relative à l’informatique, aux fichiers et aux libertés, la collecte et le traitement d’informations personnelles s'effectuent dans le respect de la vie privée.
-                        Suivant la loi informatique et Libertés en date du 6 janvier 1978, articles 39 et 40, l’Utilisateur dispose du droit d'accéder, de rectifier, de supprimer ses données personnelles.
-                     </b><br/><br/>
-                    </p>
-                </span>
-    </div>
-</div>
 
 <!--FOOTER-->
 
-<link rel="stylesheet" href="../footer_header/footer_header.css">
+<link rel="stylesheet" href="../Footer-header/Footer-header.css">
 <div class="footer">
 
     <span class="menudubaspartiegauche">
@@ -186,9 +183,9 @@
     <div class="telephone">
         <a href="">07 81 06 65 85</a>
     </div>
-    <img id="maison" src="../image/maison.png">
-    <img id="horloge" src="../image/horloge.png">
-    <img id="telephone" src="../image/telephone.png">
+    <img id="maison" src="../Image/maison.png">
+    <img id="horloge" src="../Image/horloge.png">
+    <img id="telephone" src="../Image/telephone.png">
 </div>
 
 

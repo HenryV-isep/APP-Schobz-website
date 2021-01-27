@@ -191,6 +191,6 @@
         <?php 
         require "../footer_header/footer.php"
         ?>
-        <script src="inscription-connexion.js"></script>
+        <script src="inscription.js"></script>
     </body>
 </html>

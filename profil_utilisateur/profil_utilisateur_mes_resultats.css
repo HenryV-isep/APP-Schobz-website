@@ -16,13 +16,13 @@ h2{
 
 
 .presentation_resultat{  /*Réglage général du block */
-    display: block;
+    display: solid;
     position: absolute;
     top: 6vw;
     right: 2vw;
     left: 20vw;
     height: 64vw;
-    background-color: #e4d8c7;
+    background-color: #E4D8C7;
     padding: 4vw;
     color: #484848;
 }
@@ -39,7 +39,6 @@ h2{
 script {
     width: 2vw;
 }
-
 */
 
 
@@ -83,5 +82,32 @@ script {
     margin: 4vw 3vw;
 }
 
+/* Résultats et historique */
+
+#graph {
+    display: block;
+}
+
+#resulthistory {
+    display: none;
+    width: 50%;
+}
 
 
+#resulthistory td, #resulthistory th {
+    border: 5px solid #ddd;
+    background-color: #f2f2f2;
+    padding: 8px;
+  }  
+
+#resulthistory tr:nth-child(even){background-color: #f2f2f2;}
+
+
+#resulthistory td:hover {background-color: #ddd;}
+
+#resulthistory th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    color: #484848;
+}

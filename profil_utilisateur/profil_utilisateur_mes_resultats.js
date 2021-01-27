@@ -116,3 +116,19 @@ let chart4 = new Chart(myChart4, {
         }
     }
 });
+
+
+
+function historique() {
+    var y = document.getElementById('graph');
+    var x = document.getElementById("resulthistory");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "none";
+    } else {
+        if (x.style.display = "block"){
+      x.style.display = "none";
+      y.style.display = "block";
+        }
+    }
+  }
