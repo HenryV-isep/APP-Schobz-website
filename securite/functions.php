@@ -29,7 +29,7 @@ function displayInscription ($affichage) {
                 <form id="Inscription" class="Identification" method="post" action="traitement_inscription.php">
                     <label>
                         <select name="choixgenre" class="genre" required>
-                            <option value="'.null.'">-- Genre --</option>
+                            <option value="'.null.'">-- Genre* --</option>
                             <option>Homme</option>
                             <option>Femme</option>
                             <option>Autre</option>
