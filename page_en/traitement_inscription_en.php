@@ -31,4 +31,4 @@ $message = '
 
 mail($mail, "Please confirm your email adress", $message, $header);
 
-header("location: page_inscription.php?goConfirmed=go");
+header("location: page_inscription_en.php?goConfirmed=go");

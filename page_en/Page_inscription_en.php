@@ -64,8 +64,8 @@
                 <?php
                     echo '
                         <form method="POST" class="button-box">
-                            <input type="submit" id="selectPage" name="connexion" class="toggleBTN toggleBTNGauche" value="Connexion"/>
-                            <input type="submit" id="selectPage" name="inscription" class="toggleBTN toggleBTNDroite" value="Inscription"/>
+                            <input type="submit" id="selectPage" name="connexion" class="toggleBTN toggleBTNGauche" value="Log in"/>
+                            <input type="submit" id="selectPage" name="inscription" class="toggleBTN toggleBTNDroite" value="Sign up"/>
                         </form>';
 
                 if (isset($_POST['inscription']) OR $_GET['goConfirmed']) {
@@ -189,7 +189,7 @@ According to the Data Protection Act dated January 6, 1978, articles 39 and 40, 
 
         <!--FOOTER-->
         <?php
-        require "../footer_header/footer.php"
+        require "../footer_header/footer_en.php"
         ?>
         <script src="inscription.js"></script>
     </body>

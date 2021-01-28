@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
-    <title>Manager profile/My result</title>
+    <title>Manage profile/My result</title>
 
 </head>
 <body>
@@ -29,8 +29,8 @@ require "../footer_header/header_en.php"; ?>
         <li><a class="lien" href="../profil_utilisateur/profil_utilisateur_apercu_du_compte_en.php"><img class="image" src="../Image/user.png" alt="">Account overview</a></li>
         <li><a class="lien" href="../profil_utilisateur/profil_utilisateur_mes_informations_en.php"><img class="image" src="../image/information.png" alt=""> My information</a></li>
         <li><a class="lien" href="../profil_utilisateur/profil_utilisateur_mes_resultats_en.php"><img class="image" src="../Image/result.png" alt="">My results </a></li>
-        <li><a class="lien" href="../profil_utilisateur/profil_utilisateur_apercu_du_compte.php"><img class="image" src="../Image/play.png" alt="">Test</a></li>
-        <li><a class="lien" href="../accueil/accueil.php"><img class="image" src="../Image/deconnexion.png" alt="">Log out</a></li>
+        <li><a class="lien" href="../profil_utilisateur/profil_utilisateur_test_en.php"><img class="image" src="../Image/play.png" alt="">Test</a></li>
+        <li><a class="lien" href="../page_en/accueil_en.php"><img class="image" src="../Image/deconnexion.png" alt="">Log out</a></li>
     </ul>
 </nav>
 
@@ -116,9 +116,7 @@ require "../footer_header/header_en.php"; ?>
 
 
 <!--FOOTER-->
-<?php
-require "../footer_header/footer.php";
-?>
+<?php require "../footer_header/footer_en.php";?>
 
 
 </body>

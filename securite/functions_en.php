@@ -14,8 +14,8 @@ function displayInscription ($affichage) {
     switch ($affichage) {
         case 2 : 
             echo '
-            Merci de votre inscription. Cependant, il reste une dernière étape.
-            Il vous reste à vérifier votre adresse mail.';
+            Tahnk you for signing in. However, there is one more step before accessing to your account.
+            We have sent to you a verification mail. Please check your inbox to verify your account.';
             break;
         default : 
             $maxYear= date("Y") - 18;
@@ -29,7 +29,7 @@ function displayInscription ($affichage) {
                 <form id="Inscription" class="Identification" method="post" action="traitement_inscription_en.php">
                     <label>
                         <select name="choixgenre" class="genre" required>
-                            <option value="'.null.'">-- Sex* --</option>
+                            <option value="'.null.'">-- Gender* --</option>
                             <option>Male</option>
                             <option>Female</option>
                             <option>Other</option>
@@ -48,16 +48,16 @@ function displayInscription ($affichage) {
                         <input name="email" class="identif2" type="email" placeholder="Email address*" required/>
                     </label>
                     <label>
-                        <input name="password" class="identif2" id="new_password" type="password" placeholder="Password*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au mois 8 caractère, dont une majuscule, un chiffre" required/>
+                        <input name="password" class="identif2" id="new_password" type="password" placeholder="Password*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="The password have to contain a least 8 caracters, including a capital letter and a digital number" required/>
                     </label>
                     <label>
-                        <input name="confirm_password" class="identif2" id="confirm_password"  type="password" placeholder="Confirm password*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au mois 8 caractère, dont une majuscule, un chiffre" required/>
+                        <input name="confirm_password" class="identif2" id="confirm_password"  type="password" placeholder="Confirm password*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="The password have to contain a least 8 caracters, including a capital letter and a digital number" required/>
                     </label>
                     <label>
                         <input name="numero_de_permis" class="identif2" type="text" placeholder="Driver license number"/>
                     </label>
                     <label>
-                        <input name="numero_auto_ecole" class="identif2" type="text" placeholder="Driving school number* (Nombre à 4 chiffres)" pattern="[0-9]{4}" title="Nombre à 4 chiffres" required/>
+                        <input name="numero_auto_ecole" class="identif2" type="text" placeholder="Driving school number* (4-digital number)" pattern="[0-9]{4}" title="4-digital number" required/>
                     </label>
                     <label>
                         <input type="radio" class="CGU" name="choice" value="oui" required/> I acknowledge that I have read and understood <br/><a class="link_CGU" href=#popup_CGU> policies and terms of use </a>

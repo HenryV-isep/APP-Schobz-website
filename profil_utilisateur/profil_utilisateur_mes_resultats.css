@@ -1,5 +1,8 @@
 /*LES RESULTATS*/
-
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
 .titreicon{  /*Placement de l'icon Les resultats*/
     width: 3.9vw;
     display: block;
