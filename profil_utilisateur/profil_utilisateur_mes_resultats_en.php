@@ -36,6 +36,8 @@ require "../footer_header/header_en.php"; ?>
 
 <!--LES RESULTATS-->
 
+<button onclick="historique()" style="position: absolute; left: 70%; top: 30%;z-index: 10;"> Previous results </button>
+
 <div class="presentation_resultat">
     <h1><img class="titreicon" src="../Image/result.png" alt=""></h1>
     <h2>MY RESULTS</h2>
@@ -76,8 +78,8 @@ require "../footer_header/header_en.php"; ?>
         <table id="resulthistory">
             <thead>
             <tr>
-                <th>Name of the test</th>
                 <th>Date</th>
+                <th>Test Name</th>
                 <th>Results</th>
             </tr>
             <thead>
@@ -93,8 +95,8 @@ require "../footer_header/header_en.php"; ?>
 </div>
 <!-- Partie historique des résultats-->
 
-<br/>
-<div class="chart">
+<br/><br/><br/>
+<div class="chart" id="graph">
     <div class="row">
         <div class="chart1">
             <canvas id="myChart" width="200" height="150"></canvas>

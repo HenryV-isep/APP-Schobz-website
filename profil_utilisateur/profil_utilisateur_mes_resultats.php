@@ -46,7 +46,6 @@
     <p> Vous pouvez consulter vos résultats.</p>
     <div class="containtresults">
     <?php
-                //tu fais sa nomalement sur un autre page php, faut arreté du mettre tout le code sur la même page
                 $dBHost = "localhost";
                 $dBUser = "root";
                 $dBPassword = "root";
@@ -81,8 +80,8 @@
                         <table id="resulthistory">
                             <thead>
                                 <tr>
-                                    <th>Nom du test</th>
                                     <th>Date</th>
+                                    <th>Nom du test</th>
                                     <th>Résultats</th>
                                 </tr>
                             <thead>
