@@ -63,6 +63,7 @@ body{
 }
 
 .footer{
+    z-index: 5;
     background-color : #e4d8c7;
     position: fixed;
     bottom: 0;
