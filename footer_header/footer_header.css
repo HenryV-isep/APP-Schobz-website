@@ -10,6 +10,10 @@ body{
     font-weight: bold;
 }
 
+.langue {
+    height: 3vh;
+}
+
 .topbar{
     z-index: 5;
     background-color : #e4d8c7;
@@ -313,7 +317,7 @@ input:checked + .slider:before {
 }
 .link_CGU{
     margin-bottom: 6vw;
-    margin-left: 4.5vw;
+    margin-left: 2.5vw;
 }
 #popup_CGU {
     text-decoration: none;
@@ -382,7 +386,7 @@ input:checked + .slider:before {
     border-radius: 10px;
     width: 30%;
     position: relative;
-    transition: all 5s ease-in-out;
+    transition: all 2s ease-in-out;
 }
 
 .popup .close {

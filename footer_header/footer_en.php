@@ -9,21 +9,21 @@
 
     <form class="menudubaspartiecentre">
         <span class="Nous_contacter_titre">
-        Nous contacter
+        To contact us:
         </span>
-        <div class="Nous_contacter_collect" data-validate="Merci de renseigner votre nom et prénom">
-            <input class="Nous_contacter_imput" type="text" name="name" placeholder="Nom et Prénom">
+        <div class="Nous_contacter_collect" data-validate="Please submit your first and last name">
+            <input class="Nous_contacter_imput" type="text" name="name" placeholder="First and last name">
             <span class="focus-Nous_contacter"></span>
             <span></span></div>
-        <div class="Nous_contacter_collect" data-validate="Merci de renseigner votre adresse mail valide: e@a.x">
-            <input class="Nous_contacter_imput" type="text" name="email" placeholder="E-mail" >
+        <div class="Nous_contacter_collect" data-validate="Please submit a valid mail: e@a.x">
+            <input class="Nous_contacter_imput" type="text" name="email" placeholder="Mail" >
             <span class="focus-Nous_contacter"></span>
             <span></span></div>
-        <div class="Nous_contacter_collect_imput_textarea" data-validate="Merci de renseigner votre message.">
-            <textarea class="Nous_contacter_imput_textarea" name="message" placeholder="Votre message"></textarea>
+        <div class="Nous_contacter_collect_imput_textarea" data-validate="Please input your message.">
+            <textarea class="Nous_contacter_imput_textarea" name="message" placeholder="Your message"></textarea>
             <span class="focus-Nous_contacter"></span>
         </div>
-        <input type="submit" value="Envoyer"
+        <input type="submit" value="Submit"
                class="Nous_contacter_bouton" style="color: #484848"/>
     </form>
 

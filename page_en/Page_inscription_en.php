@@ -1,4 +1,4 @@
-<?php require "../securite/bd-setup.php"; require "../securite/functions.php"; createSession();
+<?php require "../securite/bd-setup.php"; require "../securite/functions_en.php"; createSession();
 
 
     if(isset($_POST['formconnexion'])) { //si l'utilisateur clique sur 'Connexion'
@@ -26,7 +26,7 @@
 
 
                 echo '<script language="Javascript">
-                 document.location.replace("../profil_utilisateur/profil_utilisateur_apercu_du_compte.php");
+                 document.location.replace("../profil_utilisateur/profil_utilisateur_apercu_du_compte_en.php");
                  </script>';
 
             }
@@ -45,7 +45,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="page_inscription.css">
+        <link rel="stylesheet" href="../inscription_connexion/page_inscription.css">
         <link rel='stylesheet' type='text/css' href='../footer_header/footer_header.css'>
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
@@ -55,20 +55,9 @@
 
     <body>
         <!--HEADER-->
-        <div class="topbar">
-            <span class="menuduhautpartiegauche"> <!-- span c'est pour aligner les liens -->
-                <a href="../accueil/accueil.php">Home</a>
-                <a href="/page_inscription.php">My Account</a>
-                <a href="../a_propos_de_nous/a_propos_de_nous.php">About us</a>
-            </span>
-            <span>
-                <a class="middle"> DriverPsychotechniqueTest.fr</a>
-            </span>
-            <span class="menuduhautpartiedroite"> <!-- span c'est pour aligner les liens -->
-                <a class="link_CGU" href=#popup_CGU>Legal Notice and CGU</a>
-                <a href="../faq/faq.php">F.A.Q</a>
-            </span>
-        </div>
+        <?php
+        require "../footer_header/header_en.php";
+        ?>
 
         <div class="fond">
             <div class="form-box">
@@ -87,12 +76,12 @@
                         <form  id="connexion" class="Connexion" method="post" >
                             <label>
                                 <input type="text" name="username" class="identif"
-                                    placeholder="Identifiant" required>
+                                    placeholder="Username" required>
                             </label>
         
                             <label>
                                 <input type="password" name="password" class="identif"
-                                    placeholder="Mot de passe" required>
+                                    placeholder="Password" required>
                             </label>
         
                             <label>
@@ -100,7 +89,7 @@
                             </label>
         
                             <button type="submit" name ="formconnexion" class="connex1">Connection</button>
-                            <input type="button" class="Motdepasseoubliee" onclick="window.location.href="#mdp_oublie";" value="forgetted password">
+                            <input type="button" class="Motdepasseoubliee" onclick="window.location.href="#mdp_oublie";" value="Forgotten password">
                         </form>
         
                         <!--POPUP MOT DE PASSE OUBLIE-->
@@ -191,11 +180,11 @@ In accordance with Law No. 78-17 of 6 January relating to computers, files and f
 
 According to the Data Protection Act dated January 6, 1978, articles 39 and 40, the User has the right to access, rectify or delete his personal data.
  </b> <br/> <br/>
-                            </p>
-                        </span>
-                    </div>
-                </div>
-            </div>
+            </p>
+        </span>
+    </div>
+</div>
+</div>
         </div>
 
         <!--FOOTER-->

@@ -26,41 +26,41 @@ function displayInscription ($affichage) {
             $minDate=date("Y-m-d", strtotime("".$minYear."-".$nowMonth."-".$nowDay.""));
             echo '
                 <!--INSCRIPTION-->
-                <form id="Inscription" class="Identification" method="post" action="traitement_inscription.php">
+                <form id="Inscription" class="Identification" method="post" action="traitement_inscription_en.php">
                     <label>
                         <select name="choixgenre" class="genre" required>
-                            <option value="'.null.'">-- Genre* --</option>
-                            <option>Homme</option>
-                            <option>Femme</option>
-                            <option>Autre</option>
+                            <option value="'.null.'">-- Sex* --</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
                         </select>
                     </label>
                     <label>
-                        <input name="nom" class="identif2" type="text" placeholder="Nom*" required/>
+                        <input name="nom" class="identif2" type="text" placeholder="First name*" required/>
                     </label>
                     <label>
-                        <input name="prenom" class="identif2" type="text" placeholder="Prénom*" required/>
+                        <input name="prenom" class="identif2" type="text" placeholder="Last name*" required/>
                     </label>
                     <label>
-                        <input name="date_de_naissance" class="identif2" type="date" placeholder="Date de naissance*" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}" max="'.$maxDate.'" min="'.$minDate.'" required/>
+                        <input name="date_de_naissance" class="identif2" type="date" placeholder="Birthday*" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}" max="'.$maxDate.'" min="'.$minDate.'" required/>
                     </label>
                     <label>
-                        <input name="email" class="identif2" type="email" placeholder="Adresse email*" required/>
+                        <input name="email" class="identif2" type="email" placeholder="Email address*" required/>
                     </label>
                     <label>
-                        <input name="password" class="identif2" id="new_password" type="password" placeholder="Mot de passe*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au mois 8 caractère, dont une majuscule, un chiffre" required/>
+                        <input name="password" class="identif2" id="new_password" type="password" placeholder="Password*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au mois 8 caractère, dont une majuscule, un chiffre" required/>
                     </label>
                     <label>
-                        <input name="confirm_password" class="identif2" id="confirm_password"  type="password" placeholder="Confirmez votre mot de passe*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au mois 8 caractère, dont une majuscule, un chiffre" required/>
+                        <input name="confirm_password" class="identif2" id="confirm_password"  type="password" placeholder="Confirm password*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au mois 8 caractère, dont une majuscule, un chiffre" required/>
                     </label>
                     <label>
-                        <input name="numero_de_permis" class="identif2" type="text" placeholder="Numéro de permis"/>
+                        <input name="numero_de_permis" class="identif2" type="text" placeholder="Driver license number"/>
                     </label>
                     <label>
-                        <input name="numero_auto_ecole" class="identif2" type="text" placeholder="Numéro d\'auto école* (Nombre à 4 chiffres)" pattern="[0-9]{4}" title="Nombre à 4 chiffres" required/>
+                        <input name="numero_auto_ecole" class="identif2" type="text" placeholder="Driving school number* (Nombre à 4 chiffres)" pattern="[0-9]{4}" title="Nombre à 4 chiffres" required/>
                     </label>
                     <label>
-                        <input type="radio" class="CGU" name="choice" value="oui" required/> J\'ai lu et j\'accepte les <br/><a class="link_CGU" href=#popup_CGU>mentions légales & CGU </a>
+                        <input type="radio" class="CGU" name="choice" value="oui" required/> I acknowledge that I have read and understood <br/><a class="link_CGU" href=#popup_CGU> policies and terms of use </a>
                     </label>
                     <button type="submit" name ="forminscription" class="valider">Valider</button>
                 </form>';
