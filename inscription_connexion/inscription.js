@@ -3,7 +3,7 @@ var confirm_password = document.getElementById("confirm_password");
 
 function validatePassword(){
     if(password.value != confirm_password.value) {
-        confirm_password.setCustomValidity("Ne correspond pas au mot de passe saisi précédemmant");
+        confirm_password.setCustomValidity("Ne correspond pas au mot de passe saisi précédemment");
     } else {
         confirm_password.setCustomValidity('');
     }

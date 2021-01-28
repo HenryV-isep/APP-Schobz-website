@@ -6,7 +6,7 @@
         <a href="https://www.facebook.com"><img id="facebook" src="../image/facebook.png"></a>
         <a href="https://www.linkedin.com"><img id="linkedin" src="../image/linkedin.png"></a>
     </span>
-    <form class="menudubaspartiecentre" action="mailto:clothildehr@gmail.com" method="post" enctype="text/plain">
+    <form class="menudubaspartiecentre" method="post" action="traitement_messagerie.php" enctype="text/plain">
         <span class="Nous_contacter_titre">
         Nous contacter
         </span>
