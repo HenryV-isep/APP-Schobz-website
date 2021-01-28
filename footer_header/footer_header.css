@@ -11,6 +11,7 @@ body{
 }
 
 .topbar{
+    z-index: 5;
     background-color : #e4d8c7;
     height: 5vw;
     width: 100%; /*Pour que la barre prenne bien 100% de la largeur de la page*/

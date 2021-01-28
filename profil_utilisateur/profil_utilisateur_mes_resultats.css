@@ -16,6 +16,7 @@ h2{
 
 
 .presentation_resultat{  /*Réglage général du block */
+    z-index: 1;
     display: solid;
     position: absolute;
     top: 6vw;
@@ -43,6 +44,7 @@ script {
 
 
 .chart1 {
+    z-index: 2;
     text-align: center;
     position: relative;
     width: 25vw;
@@ -51,6 +53,7 @@ script {
 }
 
 .chart2 {
+    z-index: 2;
     text-align: center;
     position: relative;
     width: 25vw;
@@ -60,6 +63,7 @@ script {
 
 
 .chart3 {
+    z-index: 2;
     text-align: center;
     position: relative;
     width: 25vw;
@@ -68,6 +72,7 @@ script {
 }
 
 .chart4 {
+    z-index: 2;
     text-align: center;
     position: relative;
     width: 25vw;
@@ -86,11 +91,13 @@ script {
 
 #graph {
     display: block;
+    z-index: 2;
 }
 
 #resulthistory {
     display: none;
     width: 50%;
+    z-index: 2;
 }
 
 

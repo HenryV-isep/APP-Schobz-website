@@ -45,12 +45,12 @@
 
 <nav>
     <ul>
-        <li> Bonjour, <br/> Juliette Sebillotte </li>
-        <li><a class="lien" href="Profil%20utilisateur%20Apercu%20du%20compte.html"><img class="image" src="../Image/user.png" alt="">Aperçu du compte</a></li>
-        <li><a class="lien" href="Profil%20utilisateur%20Mes%20informations.html"><img class="image" src="../Image/information.png" alt=""> Mes informations</a></li>
-        <li><a class="lien" href="Profil%20utilisateur%20Mes%20resultats.html"><img class="image" src="../Image/result.png" alt="">Mes résultats </a></li>
-        <li><a class="lien" href="Profil%20utilisateur%20Test.html"><img class="image" src="../Image/play.png" alt="">Test</a></li>
-        <li><a class="lien" href="Deconnexion.html"><img class="image" src="../Image/deconnexion.png" alt="">Déconnexion</a></li>
+        <li> Bonjour,  </li>
+        <li><a class="lien" href="../profil_utilisateur/profil_utilisateur_apercu_du_compte.php"><img class="image" src="../Image/user.png" alt="">Aperçu du compte</a></li>
+        <li><a class="lien" href="../profil_utilisateur/profil_utilisateur_mes_informations.php"><img class="image" src="../Image/information.png" alt=""> Mes informations</a></li>
+        <li><a class="lien" href="../profil_utilisateur/profil_utilisateur_mes_resultats.php"><img class="image" src="../Image/result.png" alt="">Mes résultats </a></li>
+        <li><a class="lien" href="../profil_utilisateur/profil_utilisateur_utilisateur_test.php"><img class="image" src="../Image/play.png" alt="">Test</a></li>
+        <li><a class="lien" href="../profil_utilisateur/accueil/accueil.php"><img class="image" src="../Image/deconnexion.png" alt="">Déconnexion</a></li>
     </ul>
 </nav>
 
