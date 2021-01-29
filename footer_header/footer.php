@@ -7,7 +7,7 @@
         <a href="https://www.linkedin.com"><img id="linkedin" src="../image/linkedin.png"></a>
     </span>
 
-    <form class="menudubaspartiecentre">
+    <form class="menudubaspartiecentre" method="post" action="../footer_header/traitement_messagerie.php">
         <span class="Nous_contacter_titre">
         Nous contacter
         </span>

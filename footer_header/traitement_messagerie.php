@@ -1,11 +1,10 @@
 <?php
 require "../securite/bd-setup.php";
-createsession();
 
 $nom = $_POST['name'];
 $mail = $_POST['email'];
 $message = $_POST['message'];
-$staff = isep.auchanvn@gmail.com;
+$staff = "vien.henry.jrv@gmail.com";
 
 $header="Mine-Version: 1.0\r\n";
 $header.='From: "Contact.SCHBOTZ.com"<support@schobtz'."\n";
@@ -16,12 +15,11 @@ $message ='
     <html lang="fr">
         <body>
             <div style="padding:0;margin:0 auto;font-size:16px;font-weight:normal;line-height:22px"> 
-                <h3> Nom:'.$nom.'</h3>
-                <h3> Mail:'.$mail.'</h3>
+                <h3> Nom:</h3>'.$nom.'
+                <h3> Mail:</h3>'.$mail.'
                 <h3> Message: </h3> '.$message.'
             </div>                
         </body>
     </html>';
-
 mail($staff,"Messagerie de l'auto école.",$message,$header);
-header("location: http://localhost/APP-Schobz-website/accueil/accueil.php");
+header("location: http://localhost/APP-Schobz-website/accueil/accueil.php"); ?>

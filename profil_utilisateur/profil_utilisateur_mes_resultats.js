@@ -26,8 +26,8 @@ let chart1 = new Chart(myDoughnutChart, {
     }
 });
 
-let labels2 = ['Juliette', 'Gabin', 'Henry', 'Kais'];
-let data2 = [137.6, 130.3, 129.3, 130];
+let labels2 = ['Test1', 'Test2', 'Test3', 'Test4'];
+let data2 = [98, 92, 95, 75];
 let colors2 = [ 'white','#CED7DA', '#dd3333', '#484848'];
 
 let myChart2 = document.getElementById("myChart2").getContext('2d');
@@ -43,7 +43,7 @@ let chart2 = new Chart(myChart2, {
     },
     options: {
         title: {
-            text: "Résultats des étudiants",
+            text: "Pourcentage de réussite de la dernière série de test (en %)",
             display: true
         },
         legend: {
@@ -86,49 +86,19 @@ let chart3 = new Chart(myChart3, {
     },
     options: {
         title: {
-            text: "Résultats des différents capteurs",
+            text: "Resultats des derniers tests",
             display: true
         }
     }
 });
 
-let labels4 = ['Test 1', 'Test 2', 'Test 3', 'Test 4', 'Test 5'];
-let data4 = [83, 67, 66, 61, 187];
-let colors4 = ['#dd3333','#CED7DA', '#497e9F', '#484848','white',];
+let myDoughnutChart2 = document.getElementById("myChart4").getContext('2d');
 
-let myChart4 = document.getElementById("myChart4").getContext('2d');
-
-let chart4 = new Chart(myChart4, {
-    type: 'pie',
-    data: {
-        labels: labels4,
-        datasets: [ {
-            data: data4,
-            backgroundColor: colors4
-        }]
-    },
-    options: {
-        title: {
-            text: "Temps passé sur les tests (en min)",
-
-            display: true
-
-        }
-    }
-});
-
-
-
-function historique() {
-    var y = document.getElementById('graph');
-    var x = document.getElementById("resulthistory");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-      y.style.display = "none";
-    } else {
-        if (x.style.display = "block"){
-      x.style.display = "none";
-      y.style.display = "block";
-        }
-    }
-  }
+let chart4
+    var data = google.visualization.arrayToDataTable([
+        ['Element', 'Density', { role: 'style' }],
+        ['Copper', 8.94, '#b87333'],            // RGB value
+        ['Silver', 10.49, 'silver'],            // English color name
+        ['Gold', 19.30, 'gold'],
+        ['Platinum', 21.45, 'color: #e5e4e2' ], // CSS-style declaration
+    ]);

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="faq.css">
+    <link rel="stylesheet" type="text/css" href="./faq.css">
     <link rel="stylesheet" type="text/css" href="../footer_header/footer_header.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
@@ -10,50 +10,51 @@
 </head>
 <body>
 
-<!-- Header -->
-<?php require "../footer_header/header.php" ?>
-
+<!-- Header à ajouter -->
+<?php require "../footer_header/header_en.php" ?>
 
 <!-- Corps principal -->
 <div class="regroupement">
     <div class="categorie-QT">
         <a class="entête" href="#popup_QT">
-            Questions techniques
+            Technical questions
         </a>
         <p class="Talk">
-            Pour toutes questions concernant le fonctionnement du sites, de la lecture des résultats ou du relevé des mesures.
+            For all questions concerning the operation of the site, the reading of the results or the statement of measurements.
         </p>
     </div>
     <div class="categorie-InfoCap">
         <a class="entête" href="#popup_InfoCap">
-            Information capteur
+            Information sensor
         </a>
         <p class="Talk">
-            Pour toutes questions sur le fonctionnement des appareils de mesures.
+            For all questions concerning the measuring device
+
+
         </p>
     </div>
     <div class="categorie-ProbCap">
         <a class="entête" href="#popup_ProbCap">
-            Problème capteur
+            Sensor Problem
         </a>
         <p class="Talk">
-            Pour tout endommagement du système, veuillez le signaler à votre auto-école.
+            For any damage to the system, please report it to your driving school.
         </p>
     </div>
     <div class="categorie-QF">
         <a class="entête" href="#popup_QF">
-            Questions fréquentes
+            Frequent questions
         </a>
         <p class="Talk">
-            Pour toutes questions en générales concernant le fonctionnement du service.
+            For all general questions concerning the operation of the service.
         </p>
     </div>
     <div class="categorie-AddF">
         <a class="entête" href="#popup_AddF">
-            Ajouter une question
+            Add a question
         </a>
         <p class="Talk">
-            Pour tout autre demandes.
+            For any other requests
         </p>
     </div>
 </div>
@@ -63,14 +64,14 @@
 <div id="popup_QT" class="overlay">
     <div class="popup">
         <h2>
-            Questions techniques
+            Technicals Questions
         </h2>
         <a class="close" href="#">&times;</a>
         <span class="content">
-                    <h3>Comment lire les résultats?</h3>
-                    <p>Il est possible de lire les résultats via le profile, rubrique Mes Résultats. Vous pourrez ainsi suivre votre progression.</p>
-                    <h3>Comment suivre le relevé de mesures?</h3>
-                    <p>Vous avez accès aux mesures depuis votre profile. Votre suivi peut alors se faire directement par des graphiques.</p>
+                    <h3>How to  read the results ?</h3>
+                    <p>It is possible to read the results via the profile, section My Results. You will be able to follow your progress.</p>
+                    <h3>How to follow the measurement record ?</h3>
+                    <p>You have access to the measurements from your profile. Your monitoring can then be done directly by graphics.</p>
                 </span>
     </div>
 </div>
@@ -78,13 +79,13 @@
 <div id="popup_InfoCap" class="overlay">
     <div class="popup">
         <h2>
-            Informations sur les capteurs
+            Sensor Information
         </h2>
         <a class="close" href="#">&times;</a>
         <span class="content">
-                    <h3>Que font les appareils de mesures</h3>
-                    <h3>À quoi servent-ils?</h3>
-                    <h3>Comment fonctionnent-ils?</h3>
+                    <h3>What do measuring devices do ?</h3>
+                    <h3>What are they for ?</h3>
+                    <h3>How do they work ?</h3>
                 </span>
     </div>
 </div>
@@ -92,11 +93,11 @@
 <div id="popup_ProbCap" class="overlay">
     <div class="popup">
         <h2>
-            Problèmes avec les capteurs
+            Problem with the sensor
         </h2>
         <a class="close" href="#">&times;</a>
         <span class="content">
-                    <h3>Que faire lorsqu'un appareil ne s'active pas?</h3>
+                    <h3>What to do when a device does not activate?</h3>
                 </span>
     </div>
 </div>
@@ -104,36 +105,31 @@
 <div id="popup_QF" class="overlay">
     <div class="popup">
         <h2>
-            Questions fréquentes
+            Frequent Questions
         </h2>
         <a class="close" href="#">&times;</a>
         <span class="content">
-                    Pour toutes questions en générales à propos du fonctionnement du service.
-                    <h3>Comment accéder à son profil?</h3>
-                    <p>Le profil est accessible via le bouton "Profil" situé en haut de page.</p>
+                   For all general questions about the operation of the service.
+                    <h3>How to access his profile?</h3>
+                    <p>The profile is accessible via the "Profile" button at the top of the page.</p>
                 </span>
     </div>
 </div>
 
 <div id="popup_AddF" class="overlay">
     <div class="popup">
-        <h2>Ajouter une question</h2>
+        <h2>Add a question</h2>
         <a class="close" href="#">&times;</a>
         <span class="content">
-                    <h3>Pour tout autre demande, merci de vous référer à la rubrique Nous Contacter en bas de page pour y envoyer un message.</h3>
+                    <h3>For any other request, please refer to the Contact Us section at the bottom of the page to send a message.</h3>
                 </span>
     </div>
 </div>
 
+<!-- Bas de page à ajouter - Footer-->
+<?php require "../mentions_legales_et_cgu/mentions_legales_et_cgu_en.php" ?>
 
-<!--POPUP MENTIONS LEGALES ET CGU-->
-<?php require "../mentions_legales_et_cgu/mentions_legales_et_cgu.php" ?>
-
-
-
-<!--Footer-->
-
-<?php require "../footer_header/footer.php"?>
+<?php require "../footer_header/footer_en.php" ?>
 
 
 </body>
